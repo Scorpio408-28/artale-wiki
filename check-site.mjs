@@ -94,4 +94,23 @@ for (const page of ['changelog', 'roadmap']) {
   assert.equal(requests[0].options.cache, 'no-store');
   assert.ok(rendered.innerHTML.includes(`v${world.version}`), `${page} 未顯示目前版本`);
 }
+// 自訂高等區須在實際地圖／怪物頁標明來源並顯示刷寶資訊。
+for (const page of ['maps', 'monsters']) {
+  const nodes = new Map();
+  const node = selector => {
+    if (!nodes.has(selector)) nodes.set(selector, { value: '', innerHTML: '', selectedOptions: [] });
+    return nodes.get(selector);
+  };
+  const rendered = { innerHTML: '', querySelector: node };
+  const document = { body: { dataset: { page } }, baseURI: `https://example.test/wiki/${page}.html`,
+    querySelector: selector => selector === '#app' ? rendered : selector === 'meta[name="game-version"]' ? { content: world.version } : null };
+  await runInNewContext(readFileSync(new URL('./docs/app.js', import.meta.url), 'utf8'), {
+    document, URL, console, fetch: async () => ({ ok: true, json: async () => world })
+  });
+  const content = rendered.innerHTML + [...nodes.values()].map(n => n.innerHTML).join('');
+  assert.ok(content.includes('文字版自訂'), `${page} missing custom provenance`);
+  assert.ok(content.includes(page === 'maps' ? '補給線' : '邊境斥候'), `${page} missing frontier data`);
+  assert.ok(content.includes(page === 'maps' ? '武器攻擊／魔力60%' : '拳套攻擊力卷軸60%'), `${page} missing loot`);
+  if (page === 'maps') assert.ok(content.includes('文字版路線'), 'custom route mislabeled');
+}
 console.log(`${pages.length} 頁、2,114 件道具、${materials.length} 種雜物、47 間 NPC 商店、${Object.keys(world.maps).length} 張地圖、遊戲 v${world.version} 及完整路線圖檢查通過。`);

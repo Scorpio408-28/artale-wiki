@@ -7509,6 +7509,118 @@
       "sellPrice": 125,
       "priceSource": "經典楓之谷 v83 NPC 收購價（阿泰爾未公開，待核對）"
     },
+    "frontier_relic_scout": {
+      "name": "邊境斥候的遺跡碎片",
+      "slot": "material",
+      "sellPrice": 1100,
+      "priceSource": "文字版自訂收購價"
+    },
+    "eq_39078bcd4f82": {
+      "name": "金色雷鳥弓",
+      "slot": "weapon"
+    },
+    "eq_e289af9553b9": {
+      "name": "金色聖隼弩",
+      "slot": "weapon"
+    },
+    "frontier_relic_guard": {
+      "name": "荒原衛兵的遺跡碎片",
+      "slot": "material",
+      "sellPrice": 1100,
+      "priceSource": "文字版自訂收購價"
+    },
+    "frontier_relic_shaman": {
+      "name": "符文術士的遺跡碎片",
+      "slot": "material",
+      "sellPrice": 1100,
+      "priceSource": "文字版自訂收購價"
+    },
+    "frontier_relic_sentinel": {
+      "name": "高地守衛的遺跡碎片",
+      "slot": "material",
+      "sellPrice": 1100,
+      "priceSource": "文字版自訂收購價"
+    },
+    "frontier_relic_ancient": {
+      "name": "遺跡守護者的遺跡碎片",
+      "slot": "material",
+      "sellPrice": 1100,
+      "priceSource": "文字版自訂收購價"
+    },
+    "book_berserk_20": {
+      "name": "[技能書] 黑暗力量 20〔黑騎士〕",
+      "slot": "skillbook"
+    },
+    "book_meteor_shower_20": {
+      "name": "[技能書] 火流星 20〔大魔導士（火毒）〕",
+      "slot": "skillbook"
+    },
+    "book_blizzard_4th_20": {
+      "name": "[技能書] 暴風雪 20〔大魔導士（冰雷）〕",
+      "slot": "skillbook"
+    },
+    "book_genesis_20": {
+      "name": "[技能書] 天怒 20〔主教〕",
+      "slot": "skillbook"
+    },
+    "book_triple_throw_20": {
+      "name": "[技能書] 三飛閃 20〔夜使者〕",
+      "slot": "skillbook"
+    },
+    "book_advanced_combo_20": {
+      "name": "[技能書] 進階鬥氣 20〔英雄〕",
+      "slot": "skillbook"
+    },
+    "frontier_relic_overseer": {
+      "name": "深淵監督者的遺跡碎片",
+      "slot": "material",
+      "sellPrice": 1100,
+      "priceSource": "文字版自訂收購價"
+    },
+    "book_blast_30": {
+      "name": "[技能書] 騎士衝擊波 30〔聖騎士〕",
+      "slot": "skillbook"
+    },
+    "book_berserk_30": {
+      "name": "[技能書] 黑暗力量 30〔黑騎士〕",
+      "slot": "skillbook"
+    },
+    "book_meteor_shower_30": {
+      "name": "[技能書] 火流星 30〔大魔導士（火毒）〕",
+      "slot": "skillbook"
+    },
+    "book_blizzard_4th_30": {
+      "name": "[技能書] 暴風雪 30〔大魔導士（冰雷）〕",
+      "slot": "skillbook"
+    },
+    "book_genesis_30": {
+      "name": "[技能書] 天怒 30〔主教〕",
+      "slot": "skillbook"
+    },
+    "book_triple_throw_30": {
+      "name": "[技能書] 三飛閃 30〔夜使者〕",
+      "slot": "skillbook"
+    },
+    "book_battleship_cannon_30": {
+      "name": "[技能書] 海盜加農炮 30〔槍神〕",
+      "slot": "skillbook"
+    },
+    "book_hurricane_30": {
+      "name": "[技能書] 暴風神射 30〔箭神〕",
+      "slot": "skillbook"
+    },
+    "book_piercing_arrow_30": {
+      "name": "[技能書] 光速神弩 30〔神射手〕",
+      "slot": "skillbook"
+    },
+    "book_boomerang_step_30": {
+      "name": "[技能書] 瞬步連擊 30〔暗影神偷〕",
+      "slot": "skillbook"
+    },
+    "book_barrage_30": {
+      "name": "[技能書] 閃‧連殺 30〔拳霸〕",
+      "slot": "skillbook"
+    },
     "eq_c133521deba6": {
       "name": "葉痕耳環（枯葉耳環）",
       "slot": "earrings"
@@ -7829,10 +7941,6 @@
       "name": "[技能書] 瞬身迴避+ 30〔暗影神偷〕",
       "slot": "skillbook"
     },
-    "book_battleship_cannon_30": {
-      "name": "[技能書] 海盜加農炮 30〔槍神〕",
-      "slot": "skillbook"
-    },
     "eq_63df797f7684": {
       "name": "黑色羅赤裝",
       "slot": "overall"
@@ -7873,10 +7981,6 @@
       "name": "綠色阿爾納手套",
       "slot": "gloves"
     },
-    "book_blast_30": {
-      "name": "[技能書] 騎士衝擊波 30〔聖騎士〕",
-      "slot": "skillbook"
-    },
     "book_fire_demon_30": {
       "name": "[技能書] 炎靈地獄 30〔大魔導士（火毒）〕",
       "slot": "skillbook"
@@ -7892,14 +7996,6 @@
     "eq_28763c4f02c4": {
       "name": "殘暴炎魔頭盔",
       "slot": "hat"
-    },
-    "eq_39078bcd4f82": {
-      "name": "金色雷鳥弓",
-      "slot": "weapon"
-    },
-    "eq_e289af9553b9": {
-      "name": "金色聖隼弩",
-      "slot": "weapon"
     },
     "horntail_necklace": {
       "name": "闇黑龍王項鍊",
@@ -22225,6 +22321,127 @@
         "sg_43d877381db9",
         "sg_f4f4810afa4e",
         "sg_510b760c31a0"
+      ]
+    },
+    "frontier_camp": {
+      "name": "邊境高地・遠征營地（文字版）",
+      "region": "leafre",
+      "district": "frontier_low",
+      "minLevel": 145,
+      "monsters": [],
+      "custom": true,
+      "source": "文字版自訂・邊境高地（v0.12.38）",
+      "lootHint": "安全區；從神木村免費前往。"
+    },
+    "frontier_scout": {
+      "name": "邊境高地・補給線（文字版）",
+      "region": "leafre",
+      "district": "frontier_low",
+      "minLevel": 145,
+      "monsters": [
+        "frontier_scout"
+      ],
+      "custom": true,
+      "source": "文字版自訂・邊境高地（v0.12.38）",
+      "lootHint": "武器攻擊／魔力60%、Lv.100備用武器",
+      "route": [
+        "frontier_camp",
+        "frontier_scout"
+      ]
+    },
+    "frontier_guard": {
+      "name": "邊境高地・廢棄兵站（文字版）",
+      "region": "leafre",
+      "district": "frontier_low",
+      "minLevel": 149,
+      "monsters": [
+        "frontier_guard"
+      ],
+      "custom": true,
+      "source": "文字版自訂・邊境高地（v0.12.38）",
+      "lootHint": "武器攻擊／魔力60%、手套攻擊60%",
+      "route": [
+        "frontier_camp",
+        "frontier_scout",
+        "frontier_guard"
+      ]
+    },
+    "frontier_shaman": {
+      "name": "邊境高地・符文丘陵（文字版）",
+      "region": "leafre",
+      "district": "frontier_mid",
+      "minLevel": 153,
+      "monsters": [
+        "frontier_shaman"
+      ],
+      "custom": true,
+      "source": "文字版自訂・邊境高地（v0.12.38）",
+      "lootHint": "披風、套服、耳環主屬性60%",
+      "route": [
+        "frontier_camp",
+        "frontier_scout",
+        "frontier_guard",
+        "frontier_shaman"
+      ]
+    },
+    "frontier_sentinel": {
+      "name": "邊境高地・古代哨站（文字版）",
+      "region": "leafre",
+      "district": "frontier_mid",
+      "minLevel": 157,
+      "monsters": [
+        "frontier_sentinel"
+      ],
+      "custom": true,
+      "source": "文字版自訂・邊境高地（v0.12.38）",
+      "lootHint": "披風、套服、耳環主屬性60%",
+      "route": [
+        "frontier_camp",
+        "frontier_scout",
+        "frontier_guard",
+        "frontier_shaman",
+        "frontier_sentinel"
+      ]
+    },
+    "frontier_ancient": {
+      "name": "邊境高地・封印迴廊（文字版）",
+      "region": "leafre",
+      "district": "frontier_high",
+      "minLevel": 161,
+      "monsters": [
+        "frontier_ancient"
+      ],
+      "custom": true,
+      "source": "文字版自訂・邊境高地（v0.12.38）",
+      "lootHint": "四轉20級技能書、武器攻擊／魔力60%",
+      "route": [
+        "frontier_camp",
+        "frontier_scout",
+        "frontier_guard",
+        "frontier_shaman",
+        "frontier_sentinel",
+        "frontier_ancient"
+      ]
+    },
+    "frontier_overseer": {
+      "name": "邊境高地・遺跡核心（文字版）",
+      "region": "leafre",
+      "district": "frontier_high",
+      "minLevel": 165,
+      "monsters": [
+        "frontier_overseer"
+      ],
+      "custom": true,
+      "source": "文字版自訂・邊境高地（v0.12.38）",
+      "lootHint": "四轉30級技能書、主屬性60%",
+      "route": [
+        "frontier_camp",
+        "frontier_scout",
+        "frontier_guard",
+        "frontier_shaman",
+        "frontier_sentinel",
+        "frontier_ancient",
+        "frontier_overseer"
       ]
     },
     "lf_horntail_cave": {
@@ -51936,6 +52153,1260 @@
           "estimated": true
         }
       ]
+    },
+    "frontier_scout": {
+      "name": "邊境斥候",
+      "level": 150,
+      "hp": 190000,
+      "exp": 11800,
+      "attack": 197,
+      "mesos": [
+        1400,
+        1550
+      ],
+      "drop": "frontier_relic_scout",
+      "dropRate": 0.25,
+      "custom": true,
+      "source": "文字版自訂・邊境高地（v0.12.38）",
+      "combatSource": "文字版自訂・邊境高地（v0.12.38）",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "id": "frontier_scout",
+      "avoid": 52,
+      "accuracy": 240,
+      "def": 1020,
+      "mdef": 910,
+      "undead": false,
+      "mp": 450,
+      "elements": {},
+      "drops": [
+        {
+          "id": "frontier_relic_scout",
+          "chance": 0.25,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_b27036495c05",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_3251c260bc96",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_92fcaa387e9b",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_a17d4c9cc313",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_eaf36056d75c",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_6596f6f02b19",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_fe3983c69274",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_134a0617d218",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_74ee9507937d",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_bf786b627f0a",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_5e3df30d95bb",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_bbf38a7c57c4",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_dbd564c283d6",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_098284f5c975",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_59c91b85176f",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_70c4e8e9a828",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_739a04647f01",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_cdd23388c162",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_b82bf1a1ea61",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_defb142452aa",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_36330cfcd2d8",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_b05cc36e143d",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_e4a5a60f7e29",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_5b220368c73b",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_1e6afbc1d2d6",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_28e9523dc943",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_988af2c6394a",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_fc6fa4a87a71",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_f0eed71331c8",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_00ba5759a86e",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_ca93ef3bf929",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_39078bcd4f82",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_e289af9553b9",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "elixir",
+          "chance": 0.02,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "mana_elixir",
+          "chance": 0.04,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        }
+      ]
+    },
+    "frontier_guard": {
+      "name": "荒原衛兵",
+      "level": 154,
+      "hp": 210000,
+      "exp": 12600,
+      "attack": 202,
+      "mesos": [
+        1448,
+        1598
+      ],
+      "drop": "frontier_relic_guard",
+      "dropRate": 0.25,
+      "custom": true,
+      "source": "文字版自訂・邊境高地（v0.12.38）",
+      "combatSource": "文字版自訂・邊境高地（v0.12.38）",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "id": "frontier_guard",
+      "avoid": 54,
+      "accuracy": 244,
+      "def": 1052,
+      "mdef": 942,
+      "undead": false,
+      "mp": 450,
+      "elements": {},
+      "drops": [
+        {
+          "id": "frontier_relic_guard",
+          "chance": 0.25,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_b27036495c05",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_3251c260bc96",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_92fcaa387e9b",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_a17d4c9cc313",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_eaf36056d75c",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_6596f6f02b19",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_fe3983c69274",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_134a0617d218",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_74ee9507937d",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_bf786b627f0a",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_5e3df30d95bb",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_bbf38a7c57c4",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_dbd564c283d6",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_098284f5c975",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_59c91b85176f",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_70c4e8e9a828",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_50da3cd08426",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_739a04647f01",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_cdd23388c162",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_b82bf1a1ea61",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_defb142452aa",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_36330cfcd2d8",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_b05cc36e143d",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_e4a5a60f7e29",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_5b220368c73b",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_1e6afbc1d2d6",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_28e9523dc943",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_988af2c6394a",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_fc6fa4a87a71",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_f0eed71331c8",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_00ba5759a86e",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_ca93ef3bf929",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_39078bcd4f82",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_e289af9553b9",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "elixir",
+          "chance": 0.02,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "mana_elixir",
+          "chance": 0.04,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        }
+      ]
+    },
+    "frontier_shaman": {
+      "name": "符文術士",
+      "level": 158,
+      "hp": 235000,
+      "exp": 13600,
+      "attack": 207,
+      "mesos": [
+        1496,
+        1646
+      ],
+      "drop": "frontier_relic_shaman",
+      "dropRate": 0.25,
+      "custom": true,
+      "source": "文字版自訂・邊境高地（v0.12.38）",
+      "combatSource": "文字版自訂・邊境高地（v0.12.38）",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "id": "frontier_shaman",
+      "avoid": 56,
+      "accuracy": 248,
+      "def": 1084,
+      "mdef": 974,
+      "undead": false,
+      "mp": 450,
+      "elements": {},
+      "drops": [
+        {
+          "id": "frontier_relic_shaman",
+          "chance": 0.25,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_25d7cf23d6e8",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_2955889401ae",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_a8b6f557228f",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_a271d9b2e7e5",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_0beb7130af56",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_39d48fba6830",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_dad67449c9f1",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_241d4c7c77ae",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_deb8d16727e3",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_f72e4f98aa96",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_77f769564d6d",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_d57c06625881",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_ae14d3c8bb27",
+          "chance": 0.000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_ffef0dcaa84a",
+          "chance": 0.000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_54183c32a50e",
+          "chance": 0.000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "elixir",
+          "chance": 0.02,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "mana_elixir",
+          "chance": 0.04,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        }
+      ]
+    },
+    "frontier_sentinel": {
+      "name": "高地守衛",
+      "level": 162,
+      "hp": 260000,
+      "exp": 14500,
+      "attack": 213,
+      "mesos": [
+        1544,
+        1694
+      ],
+      "drop": "frontier_relic_sentinel",
+      "dropRate": 0.25,
+      "custom": true,
+      "source": "文字版自訂・邊境高地（v0.12.38）",
+      "combatSource": "文字版自訂・邊境高地（v0.12.38）",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "id": "frontier_sentinel",
+      "avoid": 58,
+      "accuracy": 252,
+      "def": 1116,
+      "mdef": 1006,
+      "undead": false,
+      "mp": 450,
+      "elements": {},
+      "drops": [
+        {
+          "id": "frontier_relic_sentinel",
+          "chance": 0.25,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_25d7cf23d6e8",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_2955889401ae",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_a8b6f557228f",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_a271d9b2e7e5",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_0beb7130af56",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_39d48fba6830",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_dad67449c9f1",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_241d4c7c77ae",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_deb8d16727e3",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_f72e4f98aa96",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_77f769564d6d",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_d57c06625881",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_ae14d3c8bb27",
+          "chance": 0.000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_ffef0dcaa84a",
+          "chance": 0.000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_54183c32a50e",
+          "chance": 0.000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "elixir",
+          "chance": 0.02,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "mana_elixir",
+          "chance": 0.04,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        }
+      ]
+    },
+    "frontier_ancient": {
+      "name": "遺跡守護者",
+      "level": 166,
+      "hp": 285000,
+      "exp": 15400,
+      "attack": 218,
+      "mesos": [
+        1592,
+        1742
+      ],
+      "drop": "frontier_relic_ancient",
+      "dropRate": 0.25,
+      "custom": true,
+      "source": "文字版自訂・邊境高地（v0.12.38）",
+      "combatSource": "文字版自訂・邊境高地（v0.12.38）",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "id": "frontier_ancient",
+      "avoid": 60,
+      "accuracy": 256,
+      "def": 1148,
+      "mdef": 1038,
+      "undead": false,
+      "mp": 450,
+      "elements": {},
+      "drops": [
+        {
+          "id": "frontier_relic_ancient",
+          "chance": 0.25,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_b27036495c05",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_3251c260bc96",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_92fcaa387e9b",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_a17d4c9cc313",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_eaf36056d75c",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_6596f6f02b19",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_fe3983c69274",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_134a0617d218",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_74ee9507937d",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_bf786b627f0a",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_5e3df30d95bb",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_bbf38a7c57c4",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_dbd564c283d6",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_098284f5c975",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_59c91b85176f",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_70c4e8e9a828",
+          "chance": 0.0001275,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_739a04647f01",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_cdd23388c162",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_b82bf1a1ea61",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_defb142452aa",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_36330cfcd2d8",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_b05cc36e143d",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_e4a5a60f7e29",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_5b220368c73b",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_1e6afbc1d2d6",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_28e9523dc943",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_988af2c6394a",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_fc6fa4a87a71",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_f0eed71331c8",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_00ba5759a86e",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_ca93ef3bf929",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_39078bcd4f82",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_e289af9553b9",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "elixir",
+          "chance": 0.02,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "mana_elixir",
+          "chance": 0.04,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "book_berserk_20",
+          "chance": 0.0003
+        },
+        {
+          "id": "book_meteor_shower_20",
+          "chance": 0.0003
+        },
+        {
+          "id": "book_blizzard_4th_20",
+          "chance": 0.0003
+        },
+        {
+          "id": "book_genesis_20",
+          "chance": 0.0003
+        },
+        {
+          "id": "book_triple_throw_20",
+          "chance": 0.0003
+        },
+        {
+          "id": "book_blast_20",
+          "chance": 0.0003
+        },
+        {
+          "id": "book_hurricane_20",
+          "chance": 0.0003
+        },
+        {
+          "id": "book_piercing_arrow_20",
+          "chance": 0.0003
+        },
+        {
+          "id": "book_boomerang_step_20",
+          "chance": 0.0003
+        },
+        {
+          "id": "book_barrage_20",
+          "chance": 0.0003
+        },
+        {
+          "id": "book_battleship_cannon_20",
+          "chance": 0.0003
+        },
+        {
+          "id": "book_advanced_combo_20",
+          "chance": 0.0003
+        }
+      ]
+    },
+    "frontier_overseer": {
+      "name": "深淵監督者",
+      "level": 170,
+      "hp": 310000,
+      "exp": 16400,
+      "attack": 223,
+      "mesos": [
+        1640,
+        1790
+      ],
+      "drop": "frontier_relic_overseer",
+      "dropRate": 0.25,
+      "custom": true,
+      "source": "文字版自訂・邊境高地（v0.12.38）",
+      "combatSource": "文字版自訂・邊境高地（v0.12.38）",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "id": "frontier_overseer",
+      "avoid": 62,
+      "accuracy": 260,
+      "def": 1180,
+      "mdef": 1070,
+      "undead": false,
+      "mp": 450,
+      "elements": {},
+      "drops": [
+        {
+          "id": "frontier_relic_overseer",
+          "chance": 0.25,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_25d7cf23d6e8",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_2955889401ae",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_a8b6f557228f",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_a271d9b2e7e5",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_0beb7130af56",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_39d48fba6830",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_dad67449c9f1",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_241d4c7c77ae",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_deb8d16727e3",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_f72e4f98aa96",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "sc_77f769564d6d",
+          "chance": 0.00051,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_d57c06625881",
+          "chance": 0.0000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_ae14d3c8bb27",
+          "chance": 0.000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_ffef0dcaa84a",
+          "chance": 0.000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "eq_54183c32a50e",
+          "chance": 0.000692,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "elixir",
+          "chance": 0.02,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "mana_elixir",
+          "chance": 0.04,
+          "estimated": true,
+          "source": "文字版自訂・邊境高地（v0.12.38）"
+        },
+        {
+          "id": "book_advanced_combo_30",
+          "chance": 0.0003
+        },
+        {
+          "id": "book_blast_30",
+          "chance": 0.0003
+        },
+        {
+          "id": "book_berserk_30",
+          "chance": 0.0003
+        },
+        {
+          "id": "book_meteor_shower_30",
+          "chance": 0.0003
+        },
+        {
+          "id": "book_blizzard_4th_30",
+          "chance": 0.0003
+        },
+        {
+          "id": "book_genesis_30",
+          "chance": 0.0003
+        },
+        {
+          "id": "book_triple_throw_30",
+          "chance": 0.0003
+        },
+        {
+          "id": "book_battleship_cannon_30",
+          "chance": 0.0003
+        },
+        {
+          "id": "book_hurricane_30",
+          "chance": 0.0003
+        },
+        {
+          "id": "book_piercing_arrow_30",
+          "chance": 0.0003
+        },
+        {
+          "id": "book_boomerang_step_30",
+          "chance": 0.0003
+        },
+        {
+          "id": "book_barrage_30",
+          "chance": 0.0003
+        }
+      ]
     }
   },
   "fieldBosses": {
@@ -61530,7 +63001,7 @@
       "description": "攻擊速度再 +2 段（和快速系列疊加），持續 300 秒（Lv.1 經典）"
     }
   ],
-  "version": "0.12.37",
+  "version": "0.12.38",
   "gearPrices": {
     "eq_6d28d4dbe008": [12500, 6250, 0],
     "eq_42d8531366be": [24500, 12250, 0],
@@ -63514,6 +64985,24 @@
           "name": "神木村",
           "icon": "🐉",
           "town": "神木村"
+        },
+        {
+          "id": "frontier_low",
+          "name": "邊境高地・補給前線（文字版）",
+          "icon": "🏕️",
+          "town": "邊境高地・遠征營地（文字版）"
+        },
+        {
+          "id": "frontier_mid",
+          "name": "邊境高地・符文高地（文字版）",
+          "icon": "🗿",
+          "town": "邊境高地・遠征營地（文字版）"
+        },
+        {
+          "id": "frontier_high",
+          "name": "邊境高地・封印遺跡（文字版）",
+          "icon": "🔮",
+          "town": "邊境高地・遠征營地（文字版）"
         }
       ]
     },
@@ -63969,7 +65458,9 @@
       "book_berserk_20": {
         "name": "黑暗力量",
         "kind": "20",
-        "monsters": [],
+        "monsters": [
+          "frontier_ancient"
+        ],
         "bosses": [],
         "raids": [
           "zakum"
@@ -63996,7 +65487,9 @@
       "book_meteor_shower_20": {
         "name": "火流星",
         "kind": "20",
-        "monsters": [],
+        "monsters": [
+          "frontier_ancient"
+        ],
         "bosses": [],
         "raids": [
           "zakum"
@@ -64005,7 +65498,9 @@
       "book_blizzard_4th_20": {
         "name": "暴風雪",
         "kind": "20",
-        "monsters": [],
+        "monsters": [
+          "frontier_ancient"
+        ],
         "bosses": [],
         "raids": [
           "zakum"
@@ -64014,7 +65509,9 @@
       "book_genesis_20": {
         "name": "天怒",
         "kind": "20",
-        "monsters": [],
+        "monsters": [
+          "frontier_ancient"
+        ],
         "bosses": [],
         "raids": [
           "zakum"
@@ -64032,7 +65529,9 @@
       "book_triple_throw_20": {
         "name": "三飛閃",
         "kind": "20",
-        "monsters": [],
+        "monsters": [
+          "frontier_ancient"
+        ],
         "bosses": [],
         "raids": [
           "zakum"
@@ -64270,7 +65769,8 @@
         "name": "進階鬥氣",
         "kind": "30",
         "monsters": [
-          "mob_f735482139bb"
+          "mob_f735482139bb",
+          "frontier_overseer"
         ],
         "bosses": [],
         "raids": []
@@ -64315,7 +65815,8 @@
         "name": "騎士衝擊波",
         "kind": "20",
         "monsters": [
-          "mob_b54c692ec552"
+          "mob_b54c692ec552",
+          "frontier_ancient"
         ],
         "bosses": [],
         "raids": []
@@ -64323,7 +65824,9 @@
       "book_blast_30": {
         "name": "騎士衝擊波",
         "kind": "30",
-        "monsters": [],
+        "monsters": [
+          "frontier_overseer"
+        ],
         "bosses": [
           "lyka"
         ],
@@ -64341,7 +65844,9 @@
       "book_berserk_30": {
         "name": "黑暗力量",
         "kind": "30",
-        "monsters": [],
+        "monsters": [
+          "frontier_overseer"
+        ],
         "bosses": [],
         "raids": [
           "horntail"
@@ -64426,7 +65931,9 @@
       "book_meteor_shower_30": {
         "name": "火流星",
         "kind": "30",
-        "monsters": [],
+        "monsters": [
+          "frontier_overseer"
+        ],
         "bosses": [],
         "raids": [
           "horntail"
@@ -64484,7 +65991,9 @@
       "book_blizzard_4th_30": {
         "name": "暴風雪",
         "kind": "30",
-        "monsters": [],
+        "monsters": [
+          "frontier_overseer"
+        ],
         "bosses": [],
         "raids": [
           "horntail"
@@ -64521,7 +66030,9 @@
       "book_genesis_30": {
         "name": "天怒",
         "kind": "30",
-        "monsters": [],
+        "monsters": [
+          "frontier_overseer"
+        ],
         "bosses": [],
         "raids": [
           "horntail"
@@ -64568,7 +66079,8 @@
         "name": "暴風神射",
         "kind": "20",
         "monsters": [
-          "mob_5922b7ec3f91"
+          "mob_5922b7ec3f91",
+          "frontier_ancient"
         ],
         "bosses": [],
         "raids": []
@@ -64623,7 +66135,8 @@
         "name": "光速神弩",
         "kind": "20",
         "monsters": [
-          "mob_b54c692ec552"
+          "mob_b54c692ec552",
+          "frontier_ancient"
         ],
         "bosses": [],
         "raids": []
@@ -64735,7 +66248,9 @@
       "book_triple_throw_30": {
         "name": "三飛閃",
         "kind": "30",
-        "monsters": [],
+        "monsters": [
+          "frontier_overseer"
+        ],
         "bosses": [],
         "raids": [
           "horntail"
@@ -64802,7 +66317,8 @@
         "name": "瞬步連擊",
         "kind": "20",
         "monsters": [
-          "mob_f735482139bb"
+          "mob_f735482139bb",
+          "frontier_ancient"
         ],
         "bosses": [
           "lyka"
@@ -64875,7 +66391,8 @@
         "name": "閃‧連殺",
         "kind": "20",
         "monsters": [
-          "mob_1dc5170a2c6a"
+          "mob_1dc5170a2c6a",
+          "frontier_ancient"
         ],
         "bosses": [
           "dodo"
@@ -64951,7 +66468,8 @@
         "name": "海盜加農炮",
         "kind": "20",
         "monsters": [
-          "mob_dc927578ff6a"
+          "mob_dc927578ff6a",
+          "frontier_ancient"
         ],
         "bosses": [
           "griffey"
@@ -64961,7 +66479,9 @@
       "book_battleship_cannon_30": {
         "name": "海盜加農炮",
         "kind": "30",
-        "monsters": [],
+        "monsters": [
+          "frontier_overseer"
+        ],
         "bosses": [
           "leviathan"
         ],
@@ -64985,6 +66505,51 @@
         "bosses": [
           "lyka"
         ],
+        "raids": []
+      },
+      "book_advanced_combo_20": {
+        "name": "進階鬥氣",
+        "kind": "20",
+        "monsters": [
+          "frontier_ancient"
+        ],
+        "bosses": [],
+        "raids": []
+      },
+      "book_hurricane_30": {
+        "name": "暴風神射",
+        "kind": "30",
+        "monsters": [
+          "frontier_overseer"
+        ],
+        "bosses": [],
+        "raids": []
+      },
+      "book_piercing_arrow_30": {
+        "name": "光速神弩",
+        "kind": "30",
+        "monsters": [
+          "frontier_overseer"
+        ],
+        "bosses": [],
+        "raids": []
+      },
+      "book_boomerang_step_30": {
+        "name": "瞬步連擊",
+        "kind": "30",
+        "monsters": [
+          "frontier_overseer"
+        ],
+        "bosses": [],
+        "raids": []
+      },
+      "book_barrage_30": {
+        "name": "閃‧連殺",
+        "kind": "30",
+        "monsters": [
+          "frontier_overseer"
+        ],
+        "bosses": [],
         "raids": []
       }
     },
