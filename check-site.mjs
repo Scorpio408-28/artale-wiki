@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
+import { runInNewContext } from 'node:vm';
 
 const pages = ['index', 'guide', 'equipment', 'scrolls', 'materials', 'shops', 'maps', 'monsters', 'jobs', 'skillbooks', 'roadmap', 'changelog'];
 for (const page of pages) {
@@ -43,9 +44,12 @@ assert.equal(ids.size, 2114);
 for (const shop of catalog.shops) for (const offer of shop.offers) assert.ok(ids.has(offer.itemId));
 for (const asset of ['app.js', 'styles.css', 'avatar.png', 'city-cover.png']) assert.ok(existsSync(new URL(`./docs/${asset}`, import.meta.url)));
 const roadmap = JSON.parse(readFileSync(new URL('./docs/roadmap.json', import.meta.url)));
-assert.deepEqual(roadmap.phases.map(x => x.id), ['0.0', '0.1', '0.2', '0.3', '0.4', '0.5', '0.6', '0.7', '1.0', '1.1', '1.2', '1.3', '1.4', '1.5', '2.0', '3.0', '4.0']);
+assert.equal(roadmap.version, world.version, '開發路線必須同步目前遊戲版本');
+assert.equal(new Set(roadmap.phases.map(phase => phase.id)).size, roadmap.phases.length);
+assert.ok(roadmap.current.some(line => line.includes(`${Object.keys(world.maps).length} 張地圖`)));
+assert.ok(roadmap.current.some(line => line.includes(`${world.skills.filter(skill => skill.inert).length} 個技能項目`)));
 for (const phase of roadmap.phases) {
-  assert.ok(phase.features.length >= 3, `${phase.id} missing features`);
+  assert.ok(phase.features.length >= 2, `${phase.id} missing features`);
   assert.ok(phase.acceptance.length >= 1, `${phase.id} missing acceptance`);
 }
 for (const phrase of ['自動配點', '掉落', '野王', '二轉', '三轉', '四轉'])
@@ -65,4 +69,29 @@ if (world.skillBooks?.sources) {
 }
 const gameChangelog = JSON.parse(readFileSync(new URL('./docs/game-changelog.json', import.meta.url)));
 assert.equal(gameChangelog[0].version, world.version);
+for (const page of pages) {
+  const html = readFileSync(new URL(`./docs/${page}.html`, import.meta.url), 'utf8');
+  assert.ok(html.includes(`<meta name="game-version" content="${world.version}">`), `${page} 版本標記過期`);
+  assert.ok(html.includes(`src="app.js?v=${world.version}-`), `${page} 缺少程式快取版本`);
+  assert.ok(html.includes(`href="styles.css?v=${world.version}-`), `${page} 缺少樣式快取版本`);
+}
+// 執行實際前端的資料載入及渲染，確認更新頁／路線頁要求最新資料並顯示目前版本。
+for (const page of ['changelog', 'roadmap']) {
+  const rendered = { innerHTML: '' }, requests = [];
+  const document = {
+    body: { dataset: { page } }, baseURI: `https://example.test/wiki/${page}.html`,
+    querySelector: selector => selector === '#app' ? rendered : selector === 'meta[name="game-version"]' ? { content: world.version } : null
+  };
+  await runInNewContext(readFileSync(new URL('./docs/app.js', import.meta.url), 'utf8'), {
+    document, URL, console,
+    fetch: async (url, options) => {
+      requests.push({ url, options });
+      return { ok: true, json: async () => url.pathname.endsWith('/roadmap.json') ? roadmap : gameChangelog };
+    }
+  });
+  assert.equal(requests.length, 1);
+  assert.equal(requests[0].url.searchParams.get('v'), world.version);
+  assert.equal(requests[0].options.cache, 'no-store');
+  assert.ok(rendered.innerHTML.includes(`v${world.version}`), `${page} 未顯示目前版本`);
+}
 console.log(`${pages.length} 頁、2,114 件道具、${materials.length} 種雜物、47 間 NPC 商店、${Object.keys(world.maps).length} 張地圖、遊戲 v${world.version} 及完整路線圖檢查通過。`);

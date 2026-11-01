@@ -1,4 +1,9 @@
-import { writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+
+const { version } = JSON.parse(readFileSync(new URL('./docs/world.json', import.meta.url), 'utf8'));
+const assetVersion = file => `${version}-${createHash('sha256').update(readFileSync(new URL(`./docs/${file}`, import.meta.url))).digest('hex').slice(0, 12)}`;
+const appVersion = assetVersion('app.js'), styleVersion = assetVersion('styles.css');
 
 const pages = [
   ['index', '首頁', '文字版阿泰爾的冒險入口'],
@@ -9,9 +14,9 @@ const pages = [
   ['shops', 'NPC 商店', '查詢 NPC 販售裝備與卷軸的資料'],
   ['maps', '地圖', '目前文字版遊戲的地圖與怪物'],
   ['monsters', '怪物', '目前文字版遊戲的怪物資料'],
-  ['jobs', '職業', '一轉職業與盜賊二轉分支'],
+  ['jobs', '職業', '一轉至四轉的職業、技能與開放狀態'],
   ['skillbooks', '技能書', '四轉技能書在哪裡打、哪隻怪會掉'],
-  ['roadmap', '開發路線', '從第一代完整體驗到四轉的版本計畫'],
+  ['roadmap', '開發路線', '目前已開放、部分完成與待開發的功能'],
   ['changelog', '更新紀錄', '資料來源與網站更新歷程']
 ];
 const nav = pages.map(([id, name]) => `<a href="${id}.html" data-nav="${id}">${name}</a>`).join('');
@@ -22,11 +27,12 @@ for (const [id, name, description] of pages) {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#182b2a">
+  <meta name="game-version" content="${version}">
   <meta name="description" content="${description}。文字版阿泰爾資料站。">
   <title>${name}｜文字版阿泰爾資料站</title>
   <link rel="icon" href="avatar.png">
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="app.js"></script>
+  <link rel="stylesheet" href="styles.css?v=${styleVersion}">
+  <script defer src="app.js?v=${appVersion}"></script>
 </head>
 <body data-page="${id}">
   <a class="skip" href="#main">跳到主要內容</a>
