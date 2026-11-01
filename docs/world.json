@@ -23722,6 +23722,11 @@
       "undead": false,
       "mp": 100,
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "animal_skin",
@@ -23991,6 +23996,11 @@
       "undead": false,
       "mp": 150,
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_7bf30f3c8bb2",
@@ -24111,6 +24121,11 @@
       "mp": 100,
       "elements": "H3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_e36ef03a550f",
@@ -25542,6 +25557,11 @@
       "mp": 100,
       "elements": "H3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_9865c1d3778d",
@@ -25664,6 +25684,11 @@
       "mp": 100,
       "elements": "H3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_f42fe8d69574",
@@ -25804,6 +25829,11 @@
       "mp": 200,
       "elements": "H3I2S1",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_d38089588515",
@@ -25918,6 +25948,11 @@
       "mp": 120,
       "elements": "F2I3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_1556d3d127db",
@@ -26844,6 +26879,11 @@
       "undead": false,
       "mp": 100,
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_6a2cf03994fd",
@@ -26956,6 +26996,11 @@
       "mp": 100,
       "elements": "H2",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_110d72f75446",
@@ -27077,6 +27122,11 @@
       "undead": false,
       "mp": 115,
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_110d72f75446",
@@ -27197,6 +27247,11 @@
       "mp": 120,
       "elements": "F3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_b8815926a011",
@@ -27299,6 +27354,11 @@
       "mp": 135,
       "elements": "H3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_b2568efec733",
@@ -27411,6 +27471,11 @@
       "mp": 200,
       "elements": "I2F2L2H2",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_110d72f75446",
@@ -27858,6 +27923,11 @@
       "mp": 160,
       "elements": "F2I3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_2e7784a5b892",
@@ -27976,6 +28046,11 @@
       "mp": 160,
       "elements": "L2I3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_2e7784a5b892",
@@ -28090,6 +28165,11 @@
       "mp": 160,
       "elements": "I2F3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_2e7784a5b892",
@@ -28220,6 +28300,11 @@
       "mp": 240,
       "elements": "S1H3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_042ed3f18f2b",
@@ -28445,6 +28530,11 @@
       "mp": 50,
       "elements": "H2L2I3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_f0158bd5c97b",
@@ -28549,6 +28639,11 @@
       "mp": 50,
       "elements": "I2F3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_91e105f575bd",
@@ -28623,6 +28718,11 @@
       "mp": 50,
       "elements": "F2I3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_49ddac761621",
@@ -29231,6 +29331,11 @@
       "undead": false,
       "mp": 50,
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "animal_skin",
@@ -29350,6 +29455,11 @@
       "mp": 100,
       "elements": "I2F3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "animal_skin",
@@ -29596,6 +29706,11 @@
       "mp": 80,
       "elements": "I2F3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "animal_skin",
@@ -29705,6 +29820,11 @@
       "mp": 100,
       "elements": "I2F3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "animal_skin",
@@ -31019,6 +31139,11 @@
       "undead": true,
       "mp": 50,
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_4144fbb551ca",
@@ -31121,6 +31246,11 @@
       "undead": true,
       "mp": 70,
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_4144fbb551ca",
@@ -32212,6 +32342,11 @@
       "undead": false,
       "mp": 0,
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_ce008ea1b101",
@@ -32301,6 +32436,11 @@
       "undead": false,
       "mp": 110,
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_2e894f0ab6c4",
@@ -32740,6 +32880,11 @@
       "undead": false,
       "mp": 100,
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_a8cc2620014a",
@@ -32846,6 +32991,11 @@
       "undead": false,
       "mp": 150,
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_bae2b42f6661",
@@ -32954,6 +33104,11 @@
       "undead": false,
       "mp": 130,
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_ce59ee595e85",
@@ -33055,6 +33210,11 @@
       "undead": false,
       "mp": 55,
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_ce59ee595e85",
@@ -33160,6 +33320,11 @@
       "mp": 220,
       "elements": "I2L2F2H2",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_2c924e308820",
@@ -33276,6 +33441,11 @@
       "mp": 170,
       "elements": "L2",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_ce59ee595e85",
@@ -33509,6 +33679,11 @@
       "undead": false,
       "mp": 170,
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_ca8d5a01f8ea",
@@ -33830,6 +34005,11 @@
       "mp": 170,
       "elements": "I2F3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "animal_skin",
@@ -34115,6 +34295,11 @@
       "mp": 120,
       "elements": "F3H3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_773e5fcc9976",
@@ -34484,6 +34669,11 @@
       "mp": 100,
       "elements": "H3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "animal_skin",
@@ -34750,6 +34940,11 @@
       "undead": false,
       "mp": 150,
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_ae94b158a5ce",
@@ -34894,6 +35089,11 @@
       "mp": 150,
       "elements": "H3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_e36ef03a550f",
@@ -35132,6 +35332,11 @@
       "mp": 300,
       "elements": "I2F3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_2e7784a5b892",
@@ -35368,6 +35573,11 @@
       "mp": 110,
       "elements": "S1H3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_4fb4b75c6915",
@@ -35707,6 +35917,11 @@
       "undead": false,
       "mp": 120,
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_ef9c3c22e32a",
@@ -35846,6 +36061,11 @@
       "mp": 190,
       "elements": "F2I3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_2e7784a5b892",
@@ -35982,6 +36202,11 @@
       "undead": false,
       "mp": 80,
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_bb70affe9f46",
@@ -36122,6 +36347,11 @@
       "undead": false,
       "mp": 80,
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_bb70affe9f46",
@@ -36258,6 +36488,11 @@
       "mp": 120,
       "elements": "I3F2",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_bb70affe9f46",
@@ -36401,6 +36636,11 @@
       "mp": 140,
       "elements": "I3F2",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_bb70affe9f46",
@@ -36562,6 +36802,11 @@
       "mp": 160,
       "elements": "I2F3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_bb70affe9f46",
@@ -36697,6 +36942,11 @@
       "mp": 200,
       "elements": "I2F3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_bb70affe9f46",
@@ -36850,6 +37100,11 @@
       "mp": 190,
       "elements": "F2L3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_bb70affe9f46",
@@ -37014,6 +37269,11 @@
       "mp": 220,
       "elements": "F2L3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_bb70affe9f46",
@@ -37155,6 +37415,11 @@
       "mp": 200,
       "elements": "L2",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_700c1113d6c8",
@@ -37303,6 +37568,11 @@
       "mp": 100,
       "elements": "L2I2H3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_bb70affe9f46",
@@ -37463,6 +37733,11 @@
       "mp": 100,
       "elements": "L2I1H3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_bb70affe9f46",
@@ -37588,6 +37863,11 @@
       "mp": 180,
       "elements": "H3F3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_bb70affe9f46",
@@ -37726,6 +38006,11 @@
       "mp": 200,
       "elements": "H3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_bb70affe9f46",
@@ -37890,6 +38175,11 @@
       "mp": 180,
       "elements": "H3F3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_bb70affe9f46",
@@ -38050,6 +38340,11 @@
       "mp": 190,
       "elements": "H3I2L2",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_bb70affe9f46",
@@ -38192,6 +38487,11 @@
       "mp": 200,
       "elements": "H3I2F3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_bb70affe9f46",
@@ -38330,6 +38630,11 @@
       "mp": 220,
       "elements": "H3F3I1",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_bb70affe9f46",
@@ -38460,6 +38765,11 @@
       "mp": 300,
       "elements": "H3I2",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_700c1113d6c8",
@@ -38606,6 +38916,11 @@
       "mp": 120,
       "elements": "L2",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_2ff768f2fe37",
@@ -38701,6 +39016,11 @@
       "mp": 200,
       "elements": "L2",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_1e48c3866bdd",
@@ -38784,6 +39104,11 @@
       "mp": 300,
       "elements": "S3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_0b88b4c4eb3b",
@@ -39005,6 +39330,11 @@
       "mp": 160,
       "elements": "F2I3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_aefd129a0a09",
@@ -39439,6 +39769,11 @@
       "mp": 150,
       "elements": "S3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_ec3912c6e590",
@@ -39511,6 +39846,11 @@
       "mp": 200,
       "elements": "S2",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_c4f3b9037486",
@@ -39592,6 +39932,11 @@
       "mp": 100,
       "elements": "F3S3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_1cfd5536585e",
@@ -39681,6 +40026,11 @@
       "mp": 200,
       "elements": "H3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_5239b3756962",
@@ -39784,6 +40134,11 @@
       "mp": 200,
       "elements": "I2F3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_3c82fab07295",
@@ -39893,6 +40248,11 @@
       "mp": 200,
       "elements": "F2I3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_c5eceb023843",
@@ -40488,6 +40848,11 @@
       "mp": 200,
       "elements": "L3S3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_17f9b8dcf2b6",
@@ -40596,6 +40961,11 @@
       "mp": 200,
       "elements": "F2I3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_17f9b8dcf2b6",
@@ -40700,6 +41070,11 @@
       "mp": 210,
       "elements": "F2I3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_1556d3d127db",
@@ -40799,6 +41174,11 @@
       "mp": 250,
       "elements": "F3I2",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_1556d3d127db",
@@ -40891,6 +41271,11 @@
       "undead": false,
       "mp": 250,
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_1556d3d127db",
@@ -41006,6 +41391,11 @@
       "mp": 240,
       "elements": "H3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_17f9b8dcf2b6",
@@ -41147,6 +41537,11 @@
       "mp": 250,
       "elements": "H3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_17f9b8dcf2b6",
@@ -41306,6 +41701,11 @@
       "undead": false,
       "mp": 200,
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_17f9b8dcf2b6",
@@ -41419,6 +41819,11 @@
       "undead": false,
       "mp": 240,
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_17f9b8dcf2b6",
@@ -41540,6 +41945,11 @@
       "undead": false,
       "mp": 300,
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_520a78662a83",
@@ -41620,6 +42030,11 @@
       "mp": 195,
       "elements": "S2L2",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_520a78662a83",
@@ -41705,6 +42120,11 @@
       "mp": 200,
       "elements": "S2L2",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_520a78662a83",
@@ -41801,6 +42221,11 @@
       "mp": 200,
       "elements": "S2L2",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_520a78662a83",
@@ -41891,6 +42316,11 @@
       "mp": 200,
       "elements": "S2L2",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_520a78662a83",
@@ -41978,6 +42408,11 @@
       "mp": 200,
       "elements": "I2F3L3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_520a78662a83",
@@ -42054,6 +42489,11 @@
       "mp": 250,
       "elements": "I2F3L3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_520a78662a83",
@@ -42136,6 +42576,11 @@
       "mp": 260,
       "elements": "I2F3L3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_520a78662a83",
@@ -42238,6 +42683,11 @@
       "mp": 270,
       "elements": "I2F3L3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_520a78662a83",
@@ -42323,6 +42773,11 @@
       "mp": 300,
       "elements": "F2S3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_520a78662a83",
@@ -42407,6 +42862,11 @@
       "mp": 320,
       "elements": "F2S3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_520a78662a83",
@@ -42487,6 +42947,11 @@
       "mp": 340,
       "elements": "F2S3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_520a78662a83",
@@ -42567,6 +43032,11 @@
       "mp": 360,
       "elements": "F2S3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_520a78662a83",
@@ -42650,6 +43120,11 @@
       "mp": 150,
       "elements": "I2F2",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_3d5916acba27",
@@ -42754,6 +43229,11 @@
       "mp": 150,
       "elements": "L2F2",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_8780ea62ccdc",
@@ -42837,6 +43317,11 @@
       "mp": 130,
       "elements": "S2F2",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_9ca0942179bc",
@@ -43059,6 +43544,11 @@
       "mp": 120,
       "elements": "S3F2",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_d2623e77b76c",
@@ -44098,6 +44588,11 @@
       "mp": 190,
       "elements": "F2H3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_346395a20a57",
@@ -44223,6 +44718,11 @@
       "mp": 190,
       "elements": "S2F2",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_738ca2ea6b9f",
@@ -44357,6 +44857,11 @@
       "mp": 210,
       "elements": "F2L2",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_3085a1f31a99",
@@ -44499,6 +45004,11 @@
       "mp": 230,
       "elements": "F2",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_7b3454d18303",
@@ -44606,6 +45116,11 @@
       "mp": 240,
       "elements": "F2I2",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_ffd75c5e620e",
@@ -46625,6 +47140,11 @@
       "undead": false,
       "mp": 200,
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_2f2a447e5db1",
@@ -46725,6 +47245,11 @@
       "undead": true,
       "mp": 100,
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_75745d5b1222",
@@ -46827,6 +47352,11 @@
       "undead": true,
       "mp": 150,
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_d14bad1b96be",
@@ -47201,6 +47731,11 @@
       "undead": false,
       "mp": 80,
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_c872a51e6647",
@@ -47318,6 +47853,11 @@
       "undead": false,
       "mp": 240,
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_2fe432dc96a8",
@@ -47466,6 +48006,11 @@
       "undead": false,
       "mp": 300,
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_99bcf8ec0c94",
@@ -47967,6 +48512,11 @@
       "mp": 130,
       "elements": "I2F3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_173dc1ed6adc",
@@ -48100,6 +48650,11 @@
       "undead": false,
       "mp": 140,
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_173dc1ed6adc",
@@ -48224,6 +48779,11 @@
       "mp": 200,
       "elements": "S1",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_1d7d1ab5641f",
@@ -48357,6 +48917,11 @@
       "mp": 220,
       "elements": "S1F2L2",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_71346c27c9b6",
@@ -49584,6 +50149,11 @@
       "mp": 110,
       "elements": "S1H3",
       "combatSource": "經典楓之谷 v83",
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack",
       "drops": [
         {
           "id": "mat_4fb4b75c6915",
@@ -51736,7 +52306,12 @@
       "mesoBags": [
         "copper"
       ],
-      "boss": true
+      "boss": true,
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack"
     },
     "king_clang": {
       "gmsId": 5220000,
@@ -51955,7 +52530,12 @@
       "mesoBags": [
         "silver"
       ],
-      "boss": true
+      "boss": true,
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack"
     },
     "faust": {
       "gmsId": 5220002,
@@ -52398,7 +52978,12 @@
         "silver",
         "copper"
       ],
-      "boss": true
+      "boss": true,
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack"
     },
     "mushmom": {
       "gmsId": 6130101,
@@ -52563,7 +53148,12 @@
         "gold",
         "silver"
       ],
-      "boss": true
+      "boss": true,
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack"
     },
     "scholar_ghost": {
       "gmsId": 6090003,
@@ -52720,7 +53310,12 @@
       "mesoBags": [
         "silver"
       ],
-      "boss": true
+      "boss": true,
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack"
     },
     "snow_witch": {
       "gmsId": 6090001,
@@ -52849,7 +53444,12 @@
         "gold",
         "silver"
       ],
-      "boss": true
+      "boss": true,
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack"
     },
     "riche": {
       "gmsId": 6090000,
@@ -53012,7 +53612,12 @@
         "silver",
         "copper"
       ],
-      "boss": true
+      "boss": true,
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack"
     },
     "dyle": {
       "gmsId": 6220000,
@@ -53188,7 +53793,12 @@
         "silver",
         "copper"
       ],
-      "boss": true
+      "boss": true,
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack"
     },
     "zeno": {
       "gmsId": 6220001,
@@ -53477,7 +54087,12 @@
         "gold",
         "silver"
       ],
-      "boss": true
+      "boss": true,
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack"
     },
     "nine_tailed_fox": {
       "gmsId": 7220001,
@@ -53646,7 +54261,12 @@
         "heavy",
         "gold"
       ],
-      "boss": true
+      "boss": true,
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack"
     },
     "security_camera": {
       "gmsId": 7090000,
@@ -53815,7 +54435,12 @@
         "silver",
         "copper"
       ],
-      "boss": true
+      "boss": true,
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack"
     },
     "deet_and_roi": {
       "gmsId": 8090000,
@@ -53963,7 +54588,12 @@
         "silver",
         "copper"
       ],
-      "boss": true
+      "boss": true,
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack"
     },
     "jr_balrog": {
       "gmsId": 8130100,
@@ -54169,7 +54799,12 @@
         "gold",
         "copper"
       ],
-      "boss": true
+      "boss": true,
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack"
     },
     "eliza": {
       "gmsId": 8220000,
@@ -54368,7 +55003,12 @@
         "gold",
         "copper"
       ],
-      "boss": true
+      "boss": true,
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack"
     },
     "chimera": {
       "gmsId": 8220002,
@@ -54576,7 +55216,12 @@
         "gold",
         "silver"
       ],
-      "boss": true
+      "boss": true,
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack"
     },
     "crazy_meowz": {
       "gmsId": 9410035,
@@ -55098,7 +55743,12 @@
       "mesoBags": [
         "gold"
       ],
-      "boss": true
+      "boss": true,
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack"
     },
     "griffey": {
       "gmsId": 8180001,
@@ -55339,7 +55989,12 @@
       "mesoBags": [
         "gold"
       ],
-      "boss": true
+      "boss": true,
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack"
     },
     "leviathan": {
       "gmsId": 8220003,
@@ -55490,7 +56145,12 @@
         "heavy",
         "silver"
       ],
-      "boss": true
+      "boss": true,
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack"
     },
     "dodo": {
       "gmsId": 8220004,
@@ -55601,7 +56261,12 @@
       "mesoBags": [
         "heavy"
       ],
-      "boss": true
+      "boss": true,
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack"
     },
     "lilynouch": {
       "gmsId": 8220005,
@@ -55689,7 +56354,12 @@
       "mesoBags": [
         "heavy"
       ],
-      "boss": true
+      "boss": true,
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack"
     },
     "lyka": {
       "gmsId": 8220006,
@@ -55812,7 +56482,12 @@
       "mesoBags": [
         "heavy"
       ],
-      "boss": true
+      "boss": true,
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack"
     },
     "zakum": {
       "name": "殘暴炎魔",
@@ -55892,7 +56567,12 @@
           "chance": 0.2
         }
       ],
-      "boss": true
+      "boss": true,
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack"
     },
     "horntail": {
       "name": "闇黑龍王",
@@ -56003,7 +56683,12 @@
           "chance": 0.2
         }
       ],
-      "boss": true
+      "boss": true,
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack"
     }
   },
   "skills": [
@@ -56787,7 +57472,7 @@
       "prerequisite": {
         "iron_will": 3
       },
-      "description": "最大 HP、MP +60%（文字版：每場多一層 60% 最大 HP 的血量），持續 300 秒"
+      "description": "每場額外 HP 護盾 60%、暫時最大 MP +60%（不自動補滿），持續 300 秒"
     },
     {
       "id": "mp_eater",
@@ -60845,7 +61530,7 @@
       "description": "攻擊速度再 +2 段（和快速系列疊加），持續 300 秒（Lv.1 經典）"
     }
   ],
-  "version": "0.12.31",
+  "version": "0.12.32",
   "gearPrices": {
     "eq_6d28d4dbe008": [12500, 6250, 0],
     "eq_42d8531366be": [24500, 12250, 0],
