@@ -55827,7 +55827,7 @@
       "attack": 1080,
       "map": "dm_182b0101e361",
       "dailyHour": 13,
-      "lootShare": 0.1,
+      "lootShare": 0,
       "lootHint": "殘暴炎魔頭盔、武器與卷軸",
       "bookDrop": true,
       "weaponPool": [
@@ -55908,7 +55908,7 @@
       "map": "lf_horntail_cave",
       "dailyHour": 20,
       "weekday": 6,
-      "lootShare": 0.1,
+      "lootShare": 0,
       "lootHint": "闇黑龍王項鍊、闇黑龍王的翅膀、龍系列裝備與卷軸",
       "bookDrop": true,
       "weaponPool": [
@@ -60845,7 +60845,7 @@
       "description": "攻擊速度再 +2 段（和快速系列疊加），持續 300 秒（Lv.1 經典）"
     }
   ],
-  "version": "0.12.29",
+  "version": "0.12.30",
   "gearPrices": {
     "eq_6d28d4dbe008": [12500, 6250, 0],
     "eq_42d8531366be": [24500, 12250, 0],
