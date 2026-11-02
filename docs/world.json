@@ -60748,7 +60748,7 @@
       "targets": 6,
       "firstMp": 16,
       "maxMp": 30,
-      "description": "穿透 6 隻（拳套）"
+      "description": "穿透 6 隻（拳套）；出手快，約 0.6 秒一下"
     },
     {
       "id": "flash_jump",
@@ -63001,7 +63001,7 @@
       "description": "攻擊速度再 +2 段（和快速系列疊加），持續 300 秒（Lv.1 經典）"
     }
   ],
-  "version": "0.12.41",
+  "version": "0.12.42",
   "gearPrices": {
     "eq_6d28d4dbe008": [12500, 6250, 0],
     "eq_42d8531366be": [24500, 12250, 0],
