@@ -60743,12 +60743,12 @@
       ],
       "maxLevel": 30,
       "hits": 1,
-      "firstPercent": 65,
-      "maxPercent": 180,
+      "firstPercent": 81,
+      "maxPercent": 225,
       "targets": 6,
       "firstMp": 16,
       "maxMp": 30,
-      "description": "穿透 6 隻（拳套）；出手快，約 0.6 秒一下"
+      "description": "穿透 6 隻（拳套）；出手快，約 0.6 秒一下（原作滿級 180%，文字版 225%）"
     },
     {
       "id": "flash_jump",
@@ -62544,7 +62544,7 @@
       "hits": 2,
       "firstPercent": 260,
       "maxPercent": 400,
-      "targets": 4,
+      "targets": 5,
       "firstMp": 16,
       "maxMp": 26,
       "masterLevel": 10,
@@ -62552,7 +62552,7 @@
         "20": "萊伊卡、化石龍長老",
         "30": "拉圖斯"
       },
-      "description": "一次打 4 隻，每隻 2 下，60% 昏迷（阿泰爾 500%→400%；Lv.1 經典）"
+      "description": "一次打 5 隻（原作最多 4 隻），每隻 2 下，60% 昏迷（阿泰爾 500%→400%；Lv.1 經典）"
     },
     {
       "id": "dragon_strike",
@@ -63001,7 +63001,7 @@
       "description": "攻擊速度再 +2 段（和快速系列疊加），持續 300 秒（Lv.1 經典）"
     }
   ],
-  "version": "0.12.43",
+  "version": "0.12.44",
   "gearPrices": {
     "eq_6d28d4dbe008": [12500, 6250, 0],
     "eq_42d8531366be": [24500, 12250, 0],
@@ -65376,7 +65376,7 @@
     },
     "shadower": {
       "role": "神偷四轉・短刀",
-      "summary": "「瞬步連擊」4 隻 × 2 下還會昏迷；「致命暗殺」單體重擊；「瞬身迴避+」40% 完全閃過。"
+      "summary": "「瞬步連擊」5 隻 × 2 下還會昏迷（文字版加強，原作 4 隻）；「致命暗殺」單體重擊；「瞬身迴避+」40% 完全閃過。"
     },
     "buccaneer": {
       "role": "格鬥家四轉・指虎",
