@@ -58038,6 +58038,122 @@
           "chance": 0.2
         }
       ],
+      "parts": [
+        {
+          "key": "arm1",
+          "name": "1號手臂",
+          "hp": 10600000,
+          "def": 800,
+          "mdef": 800,
+          "attack": 505
+        },
+        {
+          "key": "arm2",
+          "name": "2號手臂",
+          "hp": 10600000,
+          "def": 800,
+          "mdef": 800,
+          "attack": 505,
+          "effect": {
+            "seal": 0.3
+          },
+          "effectText": "封印"
+        },
+        {
+          "key": "arm3",
+          "name": "3號手臂",
+          "hp": 7100000,
+          "def": 800,
+          "mdef": 950,
+          "attack": 530,
+          "elements": "F2I3S1",
+          "effect": {
+            "corrode": 0.15
+          },
+          "effectText": "武器腐蝕（傷害 -15%）"
+        },
+        {
+          "key": "arm4",
+          "name": "4號手臂",
+          "hp": 7100000,
+          "def": 800,
+          "mdef": 950,
+          "attack": 530,
+          "elements": "I2L2F3",
+          "effect": {
+            "heat": 0.2
+          },
+          "effectText": "熱能（受到傷害 +20%）"
+        },
+        {
+          "key": "arm5",
+          "name": "5號手臂",
+          "hp": 8800000,
+          "def": 1050,
+          "mdef": 1050,
+          "attack": 550,
+          "effect": {
+            "rock": 0.25
+          },
+          "effectText": "落石（每場最大 HP 25%）"
+        },
+        {
+          "key": "arm6",
+          "name": "6號手臂",
+          "hp": 9600000,
+          "def": 1050,
+          "mdef": 1050,
+          "attack": 550
+        },
+        {
+          "key": "arm7",
+          "name": "7號手臂",
+          "hp": 8100000,
+          "def": 1050,
+          "mdef": 750,
+          "attack": 510
+        },
+        {
+          "key": "arm8",
+          "name": "8號手臂",
+          "hp": 8100000,
+          "def": 1050,
+          "mdef": 750,
+          "attack": 510,
+          "effect": {
+            "heat": 0.2
+          },
+          "effectText": "熱能（受到傷害 +20%）"
+        }
+      ],
+      "partOrder": [
+        "arm2",
+        "arm4",
+        "arm8",
+        "arm5",
+        "arm3",
+        "arm1",
+        "arm7",
+        "arm6"
+      ],
+      "partExpPerHp": 0.1,
+      "phases": [
+        {
+          "name": "第一階段",
+          "from": 1
+        },
+        {
+          "name": "第二階段",
+          "from": 0.67,
+          "seal": 0.2
+        },
+        {
+          "name": "第三階段",
+          "from": 0.34,
+          "seal": 0.2,
+          "blackWater": 0.4
+        }
+      ],
       "boss": true,
       "attackTypes": [
         "physical",
@@ -61159,8 +61275,7 @@
         "20": "無",
         "30": "無"
       },
-      "inert": true,
-      "description": "原作：解除誘惑狀態，冷卻 10 分鐘（文字版沒有對應效果，學了不會變強）"
+      "description": "突襲王戰鬥中了封印時自動解除，冷卻 10 分鐘、MP 30（阿泰爾只解誘惑，文字版改成解炎魔的封印）"
     },
     {
       "id": "achilles",
@@ -61865,8 +61980,7 @@
         "20": "化石龍長老",
         "30": "噴火龍"
       },
-      "inert": true,
-      "description": "原作：隊伍不會中異常狀態（文字版沒有對應效果，學了不會變強）"
+      "description": "同地圖的人（自動組隊）打殘暴炎魔不會中封印（原作：隊伍不會中異常狀態；文字版學了就有效，不算持續與冷卻）"
     },
     {
       "id": "resurrection",
@@ -63001,7 +63115,7 @@
       "description": "攻擊速度再 +2 段（和快速系列疊加），持續 300 秒（Lv.1 經典）"
     }
   ],
-  "version": "0.12.48",
+  "version": "0.12.49",
   "gearPrices": {
     "eq_6d28d4dbe008": [12500, 6250, 0],
     "eq_42d8531366be": [24500, 12250, 0],
