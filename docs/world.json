@@ -58057,7 +58057,7 @@
           "effect": {
             "seal": 0.3
           },
-          "effectText": "封印"
+          "effectText": "封印（30% 機率這場只能普通攻擊）"
         },
         {
           "key": "arm3",
