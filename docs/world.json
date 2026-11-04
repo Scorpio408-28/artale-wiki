@@ -6623,12 +6623,24 @@
       "name": "[技能書] 絕對引力 20〔劍士共用〕",
       "slot": "skillbook"
     },
+    "book_advanced_combo_20": {
+      "name": "[技能書] 進階鬥氣 20〔英雄〕",
+      "slot": "skillbook"
+    },
     "book_holy_charge_20": {
       "name": "[技能書] 聖靈之劍 20〔聖騎士〕",
       "slot": "skillbook"
     },
+    "book_elquines_20": {
+      "name": "[技能書] 召喚冰魔 20〔大魔導士（火毒）〕",
+      "slot": "skillbook"
+    },
     "book_hurricane_20": {
       "name": "[技能書] 暴風神射 20〔箭神〕",
+      "slot": "skillbook"
+    },
+    "book_taunt_nl_20": {
+      "name": "[技能書] 挑釁 20〔盜賊共用〕",
       "slot": "skillbook"
     },
     "book_bullseye_20": {
@@ -6688,6 +6700,10 @@
     "eq_d4a3e0fdc5b8": {
       "name": "聖靈之盾",
       "slot": "shield"
+    },
+    "book_frostprey_30": {
+      "name": "[技能書] 召喚銀隼 30〔神射手〕",
+      "slot": "skillbook"
     },
     "eq_c0b6acb7b052": {
       "name": "紅色拜爾裝",
@@ -7567,10 +7583,6 @@
       "name": "[技能書] 三飛閃 20〔夜使者〕",
       "slot": "skillbook"
     },
-    "book_advanced_combo_20": {
-      "name": "[技能書] 進階鬥氣 20〔英雄〕",
-      "slot": "skillbook"
-    },
     "frontier_relic_overseer": {
       "name": "深淵監督者的遺跡碎片",
       "slot": "material",
@@ -7887,10 +7899,6 @@
     },
     "book_phoenix_30": {
       "name": "[技能書] 召喚鳳凰 30〔箭神〕",
-      "slot": "skillbook"
-    },
-    "book_taunt_nl_20": {
-      "name": "[技能書] 挑釁 20〔盜賊共用〕",
       "slot": "skillbook"
     },
     "sc_33ec670afb9b": {
@@ -42129,11 +42137,23 @@
           "chance": 0.0003
         },
         {
+          "id": "book_advanced_combo_20",
+          "chance": 0.0003
+        },
+        {
           "id": "book_holy_charge_20",
           "chance": 0.0003
         },
         {
+          "id": "book_elquines_20",
+          "chance": 0.0003
+        },
+        {
           "id": "book_hurricane_20",
+          "chance": 0.0003
+        },
+        {
+          "id": "book_taunt_nl_20",
           "chance": 0.0003
         },
         {
@@ -42509,6 +42529,10 @@
         {
           "id": "mana_elixir",
           "chance": 0.04
+        },
+        {
+          "id": "book_bow_expert_20",
+          "chance": 0.0003
         }
       ]
     },
@@ -42601,6 +42625,10 @@
         {
           "id": "mana_elixir",
           "chance": 0.04
+        },
+        {
+          "id": "book_frostprey_30",
+          "chance": 0.0003
         }
       ]
     },
@@ -53193,6 +53221,10 @@
           "chance": 0.0003
         },
         {
+          "id": "book_advanced_combo_20",
+          "chance": 0.0003
+        },
+        {
           "id": "book_blast_20",
           "chance": 0.0003
         },
@@ -53214,10 +53246,6 @@
         },
         {
           "id": "book_battleship_cannon_20",
-          "chance": 0.0003
-        },
-        {
-          "id": "book_advanced_combo_20",
           "chance": 0.0003
         }
       ]
@@ -63116,7 +63144,7 @@
       "description": "攻擊速度再 +2 段（和快速系列疊加），持續 300 秒（Lv.1 經典）"
     }
   ],
-  "version": "0.12.51",
+  "version": "0.12.52",
   "gearPrices": {
     "eq_6d28d4dbe008": [12500, 6250, 0],
     "eq_42d8531366be": [24500, 12250, 0],
@@ -65880,6 +65908,16 @@
         "bosses": [],
         "raids": []
       },
+      "book_advanced_combo_20": {
+        "name": "進階鬥氣",
+        "kind": "20",
+        "monsters": [
+          "mob_5922b7ec3f91",
+          "frontier_ancient"
+        ],
+        "bosses": [],
+        "raids": []
+      },
       "book_advanced_combo_30": {
         "name": "進階鬥氣",
         "kind": "30",
@@ -66012,6 +66050,15 @@
         "bosses": [
           "lyka"
         ],
+        "raids": []
+      },
+      "book_elquines_20": {
+        "name": "召喚冰魔",
+        "kind": "20",
+        "monsters": [
+          "mob_5922b7ec3f91"
+        ],
+        "bosses": [],
         "raids": []
       },
       "book_elquines_30": {
@@ -66175,7 +66222,8 @@
         "name": "弓術精通",
         "kind": "20",
         "monsters": [
-          "mob_a212b205ae3e"
+          "mob_a212b205ae3e",
+          "mob_b298aa15ba5d"
         ],
         "bosses": [],
         "raids": []
@@ -66267,6 +66315,15 @@
         ],
         "raids": []
       },
+      "book_frostprey_30": {
+        "name": "召喚銀隼",
+        "kind": "30",
+        "monsters": [
+          "mob_3009238c3b28"
+        ],
+        "bosses": [],
+        "raids": []
+      },
       "book_blind_20": {
         "name": "黑暗狙擊",
         "kind": "20",
@@ -66325,7 +66382,9 @@
       "book_taunt_nl_20": {
         "name": "挑釁",
         "kind": "20",
-        "monsters": [],
+        "monsters": [
+          "mob_5922b7ec3f91"
+        ],
         "bosses": [
           "manon",
           "lyka"
@@ -66620,15 +66679,6 @@
         "bosses": [
           "lyka"
         ],
-        "raids": []
-      },
-      "book_advanced_combo_20": {
-        "name": "進階鬥氣",
-        "kind": "20",
-        "monsters": [
-          "frontier_ancient"
-        ],
-        "bosses": [],
         "raids": []
       },
       "book_hurricane_30": {
