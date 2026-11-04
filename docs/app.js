@@ -259,7 +259,7 @@ function endgamePage(plan){const pct=v=>`${Math.round(v*1000)/10}%`,list=x=>x?.l
   const missing={};for(const j of plan.jobs)for(const [slot,beyond] of [...j.slots.map(s=>[s.slotName,s.beyond]),['套服／上衣／下衣',j.body.beyond]])for(const b of beyond||[])((missing[slot]||={})[b.name]||=new Set()).add(j.name);
   const missingRows=Object.entries(missing).flatMap(([slot,names])=>Object.entries(names).map(([name,jobs])=>`<tr><td>${esc(slot)}</td><td><strong>${esc(name)}</strong></td><td>${jobs.size===plan.jobs.length?'全部職業':[...jobs].map(esc).join('、')}</td></tr>`)).join('');
   root.innerHTML=head('ENDGAME GEAR','畢業裝備',`各四轉職業 Lv.${plan.level} 打王用的畢業裝：每個部位穿什麼、衝什麼卷、去哪裡拿。資料由遊戲 v${plan.version} 程式模擬算出。`)+
-    `<div class="notice"><strong>怎麼算的：</strong>用 Lv.${plan.level}、四轉技能書都學到 30 級的標準角色，逐件試穿、比「打王 DPS」（打同等級木樁）。每件裝備都用「衝滿卷的平均結果」比，例如 7 格 60% 攻擊卷算平均成功 4.2 次；只用不會爆裝的卷軸，不算純白卷。套服和「上衣＋下衣」兩種穿法都算出來比。雙手武器也可以拿盾牌。只列遊戲裡拿得到的裝備（怪掉、王掉、戒指寶箱、NPC 商店），拿不到的另外列在最下面。掉率是文字版設定。</div>
+    `<div class="notice"><strong>怎麼算的：</strong>用 Lv.${plan.level}、四轉技能書都學到 30 級的標準角色，逐件試穿、比「打王 DPS」（打同等級木樁）。每件裝備都用「衝滿卷的平均結果」比，例如 7 格 60% 攻擊卷算平均成功 4.2 次；只用不會爆裝的卷軸，不算純白卷。打王傷害幾乎一樣時（例如耳環大多只差魔防），選物防＋魔防高的。套服和「上衣＋下衣」兩種穿法都算出來比。雙手武器也可以拿盾牌。只列遊戲裡拿得到的裝備（怪掉、王掉、戒指寶箱、NPC 商店），拿不到的另外列在最下面。掉率是文字版設定。</div>
     <div class="tools"><label class="field">職業<select id="endgame-job">${plan.jobs.map(j=>`<option value="${esc(j.job)}">${esc(j.name)}</option>`).join('')}</select></label></div><div id="endgame-table"></div>
     <div class="prose section"><h2>遊戲裡有、但目前拿不到的裝備</h2><p>這些裝備在資料裡比上面的畢業裝更強，但目前沒有怪、王或商店會給，先不用找。</p></div>
     <div class="data-wrap"><table><thead><tr><th>部位</th><th>裝備</th><th>哪些職業穿了會更強</th></tr></thead><tbody>${missingRows||'<tr><td colspan="3" class="empty">沒有。</td></tr>'}</tbody></table></div>
