@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
 import { runInNewContext } from 'node:vm';
 
-const pages = ['index', 'guide', 'equipment', 'scrolls', 'materials', 'shops', 'maps', 'monsters', 'jobs', 'skillbooks', 'roadmap', 'changelog'];
+const pages = ['index', 'guide', 'equipment', 'scrolls', 'materials', 'shops', 'maps', 'monsters', 'jobs', 'skillbooks', 'endgame', 'roadmap', 'changelog'];
 for (const page of pages) {
   const html = readFileSync(new URL(`./docs/${page}.html`, import.meta.url), 'utf8');
   assert.ok(html.includes(`data-page="${page}"`));
@@ -43,6 +43,29 @@ const ids = new Set([...catalog.equipment, ...catalog.scrolls].map(item => item.
 assert.equal(ids.size, 2114);
 for (const shop of catalog.shops) for (const offer of shop.offers) assert.ok(ids.has(offer.itemId));
 for (const asset of ['app.js', 'styles.css', 'avatar.png', 'city-cover.png']) assert.ok(existsSync(new URL(`./docs/${asset}`, import.meta.url)));
+// 畢業裝備：跟遊戲同一版、12 個四轉職業都有武器，實際渲染每個職業的表格。
+const endgame = JSON.parse(readFileSync(new URL('./docs/endgame.json', import.meta.url)));
+assert.equal(endgame.version, world.version, '畢業裝備必須同步目前遊戲版本');
+assert.equal(endgame.jobs.length, 12);
+for (const job of endgame.jobs) assert.ok(job.slots.find(slot => slot.slot === 'weapon')?.pick, `${job.name} 沒有畢業武器`);
+{
+  const nodes = new Map(), node = selector => { if (!nodes.has(selector)) nodes.set(selector, { value: '', innerHTML: '' }); return nodes.get(selector); };
+  const rendered = { innerHTML: '', querySelector: node };
+  const document = { body: { dataset: { page: 'endgame' } }, baseURI: 'https://example.test/wiki/endgame.html',
+    querySelector: selector => selector === '#app' ? rendered : selector === 'meta[name="game-version"]' ? { content: world.version } : null };
+  await runInNewContext(readFileSync(new URL('./docs/app.js', import.meta.url), 'utf8'), {
+    document, URL, URLSearchParams, console, location: { search: '' }, history: { replaceState() {} },
+    fetch: async () => ({ ok: true, json: async () => endgame })
+  });
+  for (const job of endgame.jobs) {
+    node('#endgame-job').value = job.job;
+    node('#endgame-job').onchange();
+    const html = node('#endgame-table').innerHTML;
+    assert.ok(html.includes(job.name) && html.includes(job.slots[0].pick.name), `畢業裝備頁沒顯示${job.name}`);
+    assert.ok(html.includes(job.body.useOverall ? '穿套服' : '上下分開'), `${job.name} 沒比套服與上衣下衣`);
+  }
+  assert.ok(rendered.innerHTML.includes('目前拿不到的裝備'), '畢業裝備頁缺少拿不到的裝備');
+}
 const roadmap = JSON.parse(readFileSync(new URL('./docs/roadmap.json', import.meta.url)));
 assert.equal(roadmap.version, world.version, '開發路線必須同步目前遊戲版本');
 assert.equal(new Set(roadmap.phases.map(phase => phase.id)).size, roadmap.phases.length);
