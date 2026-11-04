@@ -8013,6 +8013,10 @@
       "name": "闇黑龍王的翅膀",
       "slot": "cape"
     },
+    "ring_box": {
+      "name": "戒指寶箱",
+      "slot": "special"
+    },
     "eq_7db654f37601": {
       "name": "藍色龍頭盔",
       "slot": "hat"
@@ -58205,7 +58209,7 @@
       "dailyHour": 20,
       "weekday": 6,
       "lootShare": 0,
-      "lootHint": "闇黑龍王項鍊、闇黑龍王的翅膀、龍系列裝備與卷軸",
+      "lootHint": "闇黑龍王項鍊、闇黑龍王的翅膀、龍系列裝備、卷軸與戒指寶箱",
       "bookDrop": true,
       "weaponPool": [
         "eq_7db654f37601",
@@ -58273,6 +58277,10 @@
         {
           "id": "horntail_wings",
           "chance": 0.1
+        },
+        {
+          "id": "ring_box",
+          "chance": 0.05
         },
         {
           "id": "sc_deb8d16727e3",
