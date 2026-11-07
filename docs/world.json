@@ -58004,7 +58004,7 @@
       "accuracy": 250,
       "attack": 1080,
       "map": "dm_182b0101e361",
-      "dailyHour": 13,
+      "raid": true,
       "lootShare": 0,
       "lootHint": "殘暴炎魔頭盔、武器與卷軸",
       "bookDrop": true,
@@ -58198,16 +58198,165 @@
       "name": "闇黑龍王",
       "englishName": "Horntail",
       "level": 165,
-      "hp": 1000000000,
+      "hp": 0,
       "exp": 100000000,
       "def": 2950,
       "mdef": 3840,
       "avoid": 18,
+      "parts": [
+        {
+          "key": "preLeft",
+          "name": "前置左側頭",
+          "stage": 1,
+          "hp": 63700000,
+          "def": 2950,
+          "mdef": 3840,
+          "attack": 1080,
+          "effect": {
+            "corrode": 0.15
+          },
+          "effectText": "冰霜（傷害 -15%）"
+        },
+        {
+          "key": "preRight",
+          "name": "前置右側頭",
+          "stage": 2,
+          "hp": 63700000,
+          "def": 2950,
+          "mdef": 3840,
+          "attack": 1080,
+          "effect": {
+            "rock": 0.15,
+            "strike": "閃電"
+          },
+          "effectText": "閃電（每場必中，最大 HP 15%）"
+        },
+        {
+          "key": "headLeft",
+          "name": "左頭",
+          "stage": 3,
+          "hp": 75100000,
+          "def": 2950,
+          "mdef": 3840,
+          "attack": 1080,
+          "effect": {
+            "corrode": 0.1
+          },
+          "effectText": "冰霜（傷害 -10%）"
+        },
+        {
+          "key": "headMid",
+          "name": "中頭",
+          "stage": 3,
+          "hp": 127000000,
+          "def": 2950,
+          "mdef": 3840,
+          "attack": 1080,
+          "effect": {
+            "rock": 0.2,
+            "strike": "火焰吐息"
+          },
+          "effectText": "火焰吐息（每場必中，最大 HP 20%）"
+        },
+        {
+          "key": "headRight",
+          "name": "右頭",
+          "stage": 3,
+          "hp": 75100000,
+          "def": 2950,
+          "mdef": 3840,
+          "attack": 1080,
+          "effect": {
+            "rock": 0.1,
+            "strike": "閃電"
+          },
+          "effectText": "閃電（每場必中，最大 HP 10%）"
+        },
+        {
+          "key": "handLeft",
+          "name": "左手",
+          "stage": 3,
+          "hp": 51500000,
+          "def": 2950,
+          "mdef": 3840,
+          "attack": 1080,
+          "effect": {
+            "corrode": 0.1
+          },
+          "effectText": "消增益（傷害 -10%）"
+        },
+        {
+          "key": "handRight",
+          "name": "右手",
+          "stage": 3,
+          "hp": 51500000,
+          "def": 2950,
+          "mdef": 3840,
+          "attack": 1080,
+          "effect": {
+            "corrode": 0.1
+          },
+          "effectText": "消增益（傷害 -10%）"
+        },
+        {
+          "key": "wings",
+          "name": "翅膀",
+          "stage": 3,
+          "hp": 210000000,
+          "def": 2950,
+          "mdef": 3840,
+          "attack": 1080,
+          "effect": {
+            "heat": 0.15
+          },
+          "effectText": "強風（受到傷害 +15%）"
+        },
+        {
+          "key": "legs",
+          "name": "腿",
+          "stage": 3,
+          "hp": 188400000,
+          "def": 2950,
+          "mdef": 3840,
+          "attack": 1080
+        },
+        {
+          "key": "tail",
+          "name": "尾巴",
+          "stage": 3,
+          "hp": 94000000,
+          "def": 2950,
+          "mdef": 3840,
+          "attack": 1080,
+          "effect": {
+            "rock": 0.1,
+            "strike": "甩尾"
+          },
+          "effectText": "甩尾（每場必中，最大 HP 10%）"
+        }
+      ],
+      "partOrder": [
+        "preLeft",
+        "preRight",
+        "tail",
+        "handLeft",
+        "handRight",
+        "headMid",
+        "headRight",
+        "headLeft",
+        "wings",
+        "legs"
+      ],
+      "stages": {
+        "1": "第 1 階段（左側頭）",
+        "2": "第 2 階段（右側頭）",
+        "3": "第 3 階段（本體）"
+      },
+      "partWord": "部位",
       "accuracy": 250,
       "attack": 1080,
       "map": "lf_horntail_cave",
-      "dailyHour": 20,
-      "weekday": 6,
+      "raid": true,
       "lootShare": 0,
       "lootHint": "闇黑龍王項鍊、闇黑龍王的翅膀、龍系列裝備、卷軸與戒指寶箱",
       "bookDrop": true,
@@ -63152,7 +63301,7 @@
       "description": "攻擊速度再 +2 段（和快速系列疊加），持續 300 秒（Lv.1 經典）"
     }
   ],
-  "version": "0.12.61",
+  "version": "0.12.62",
   "gearPrices": {
     "eq_6d28d4dbe008": [12500, 6250, 0],
     "eq_42d8531366be": [24500, 12250, 0],
