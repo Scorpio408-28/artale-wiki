@@ -22471,7 +22471,7 @@
       ],
       "custom": true,
       "source": "文字版自訂（轉蛋樂園）",
-      "lootHint": "每隻只掉轉蛋券，機率 0.5%。",
+      "lootHint": "史萊姆與玩家同級，HP 為等級 × 10；每隻只掉轉蛋券，機率 1%。",
       "route": [
         "henesys",
         "henesys_gacha"
@@ -53464,7 +53464,8 @@
     "gacha_slime": {
       "name": "轉蛋史萊姆",
       "level": 30,
-      "hp": 1,
+      "hp": 300,
+      "hpPerLevel": 10,
       "exp": 1,
       "attack": 1,
       "mesos": [
@@ -53472,7 +53473,7 @@
         0
       ],
       "drop": "gacha_ticket",
-      "dropRate": 0.005,
+      "dropRate": 0.01,
       "custom": true,
       "source": "文字版自訂（轉蛋樂園）",
       "id": "gacha_slime",
@@ -53487,7 +53488,7 @@
       "drops": [
         {
           "id": "gacha_ticket",
-          "chance": 0.005,
+          "chance": 0.01,
           "source": "文字版自訂（轉蛋樂園）"
         }
       ]
@@ -63353,7 +63354,7 @@
       "description": "攻擊速度再 +2 段（和快速系列疊加），持續 300 秒（Lv.1 經典）"
     }
   ],
-  "version": "0.12.64",
+  "version": "0.12.65",
   "gearPrices": {
     "eq_6d28d4dbe008": [12500, 6250, 0],
     "eq_42d8531366be": [24500, 12250, 0],
