@@ -7633,6 +7633,10 @@
       "name": "[技能書] 閃‧連殺 30〔拳霸〕",
       "slot": "skillbook"
     },
+    "gacha_ticket": {
+      "name": "轉蛋券",
+      "slot": "special"
+    },
     "eq_c133521deba6": {
       "name": "葉痕耳環（枯葉耳環）",
       "slot": "earrings"
@@ -22454,6 +22458,23 @@
         "frontier_sentinel",
         "frontier_ancient",
         "frontier_overseer"
+      ]
+    },
+    "henesys_gacha": {
+      "name": "弓箭手村・轉蛋樂園",
+      "region": "victoria",
+      "district": "henesys",
+      "minLevel": 30,
+      "levelRequired": 30,
+      "monsters": [
+        "gacha_slime"
+      ],
+      "custom": true,
+      "source": "文字版自訂（轉蛋樂園）",
+      "lootHint": "每隻只掉轉蛋券，機率 0.5%。",
+      "route": [
+        "henesys",
+        "henesys_gacha"
       ]
     },
     "lf_horntail_cave": {
@@ -53439,6 +53460,37 @@
           "chance": 0.0003
         }
       ]
+    },
+    "gacha_slime": {
+      "name": "轉蛋史萊姆",
+      "level": 30,
+      "hp": 1,
+      "exp": 1,
+      "attack": 1,
+      "mesos": [
+        0,
+        0
+      ],
+      "drop": "gacha_ticket",
+      "dropRate": 0.005,
+      "custom": true,
+      "source": "文字版自訂（轉蛋樂園）",
+      "id": "gacha_slime",
+      "avoid": 0,
+      "accuracy": 0,
+      "def": 0,
+      "mdef": 0,
+      "undead": false,
+      "mp": 0,
+      "combatSource": "文字版自訂（轉蛋樂園）",
+      "elements": {},
+      "drops": [
+        {
+          "id": "gacha_ticket",
+          "chance": 0.005,
+          "source": "文字版自訂（轉蛋樂園）"
+        }
+      ]
     }
   },
   "fieldBosses": {
@@ -63301,7 +63353,7 @@
       "description": "攻擊速度再 +2 段（和快速系列疊加），持續 300 秒（Lv.1 經典）"
     }
   ],
-  "version": "0.12.63",
+  "version": "0.12.64",
   "gearPrices": {
     "eq_6d28d4dbe008": [12500, 6250, 0],
     "eq_42d8531366be": [24500, 12250, 0],
