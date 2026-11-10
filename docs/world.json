@@ -61670,7 +61670,7 @@
       "maxLevel": 30,
       "hits": 2,
       "firstPercent": 135,
-      "maxPercent": 260,
+      "maxPercent": 290,
       "targets": 4,
       "firstMp": 16,
       "maxMp": 25,
@@ -61679,7 +61679,7 @@
         "20": "黑翼龍",
         "30": "拉圖斯"
       },
-      "description": "一次打 4 隻，每隻 2 下（劍、斧；原作最多 3 隻）"
+      "description": "一次打 4 隻，每隻 2 下（劍、斧；文字版加強：原作最多 3 隻、滿級 260%）"
     },
     {
       "id": "enrage",
@@ -62936,7 +62936,7 @@
       "maxLevel": 30,
       "hits": 1,
       "firstPercent": 300,
-      "maxPercent": 900,
+      "maxPercent": 1300,
       "targets": 3,
       "firstMp": 21,
       "maxMp": 35,
@@ -62948,7 +62948,7 @@
         "20": "海怒斯、利里諾斯、進化迅猛龍",
         "30": "格瑞芬多"
       },
-      "description": "一次打 3 隻（阿泰爾：不用能量；MP 查不到，文字版暫定）"
+      "description": "一次打 3 隻（阿泰爾：不用能量；滿級倍率文字版加強 900%→1300%；MP 查不到，文字版暫定）"
     },
     {
       "id": "super_transformation",
@@ -63344,7 +63344,7 @@
       "description": "攻擊速度再 +2 段（和快速系列疊加），持續 300 秒（Lv.1 經典）"
     }
   ],
-  "version": "1.0.2",
+  "version": "1.0.3",
   "gearPrices": {
     "eq_6d28d4dbe008": [12500, 6250, 0],
     "eq_42d8531366be": [24500, 12250, 0],
