@@ -63344,7 +63344,7 @@
       "description": "攻擊速度再 +2 段（和快速系列疊加），持續 300 秒（Lv.1 經典）"
     }
   ],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "gearPrices": {
     "eq_6d28d4dbe008": [12500, 6250, 0],
     "eq_42d8531366be": [24500, 12250, 0],
@@ -66916,6 +66916,198 @@
         ],
         "bosses": [],
         "raids": []
+      },
+      "book_monster_magnet_30": {
+        "name": "絕對引力",
+        "kind": "30",
+        "monsters": [],
+        "bosses": [],
+        "raids": [
+          "horntail"
+        ],
+        "standIn": [
+          "海怒斯"
+        ]
+      },
+      "book_rush_30": {
+        "name": "究極突刺",
+        "kind": "30",
+        "monsters": [],
+        "bosses": [],
+        "raids": [
+          "horntail"
+        ],
+        "standIn": [
+          "海怒斯"
+        ]
+      },
+      "book_brandish_30": {
+        "name": "無雙劍舞",
+        "kind": "30",
+        "monsters": [],
+        "bosses": [],
+        "raids": [
+          "horntail"
+        ],
+        "standIn": [
+          "拉圖斯"
+        ]
+      },
+      "book_big_bang_30": {
+        "name": "核爆術",
+        "kind": "30",
+        "monsters": [],
+        "bosses": [],
+        "raids": [
+          "horntail"
+        ],
+        "standIn": [
+          "海怒斯"
+        ]
+      },
+      "book_infinity_20": {
+        "name": "魔力無限",
+        "kind": "20",
+        "monsters": [],
+        "bosses": [],
+        "raids": [
+          "horntail"
+        ],
+        "standIn": [
+          "拉圖斯"
+        ]
+      },
+      "book_ifrit_30": {
+        "name": "召喚火炎神",
+        "kind": "30",
+        "monsters": [],
+        "bosses": [],
+        "raids": [
+          "horntail"
+        ],
+        "standIn": [
+          "困難拉圖斯"
+        ]
+      },
+      "book_angel_ray_30": {
+        "name": "天使之箭",
+        "kind": "30",
+        "monsters": [],
+        "bosses": [],
+        "raids": [
+          "horntail"
+        ],
+        "standIn": [
+          "拉圖斯"
+        ]
+      },
+      "book_taunt_nl_30": {
+        "name": "挑釁",
+        "kind": "30",
+        "monsters": [],
+        "bosses": [],
+        "raids": [
+          "horntail"
+        ],
+        "standIn": [
+          "困難拉圖斯"
+        ]
+      },
+      "book_ninja_ambush_nl_30": {
+        "name": "忍影瞬殺",
+        "kind": "30",
+        "monsters": [],
+        "bosses": [],
+        "raids": [
+          "horntail"
+        ],
+        "standIn": [
+          "海怒斯"
+        ]
+      },
+      "book_ninja_storm_30": {
+        "name": "忍術風影",
+        "kind": "30",
+        "monsters": [],
+        "bosses": [],
+        "raids": [
+          "horntail"
+        ],
+        "standIn": [
+          "困難拉圖斯"
+        ]
+      },
+      "book_demolition_30": {
+        "name": "閃‧爆破",
+        "kind": "30",
+        "monsters": [],
+        "bosses": [],
+        "raids": [
+          "horntail"
+        ],
+        "standIn": [
+          "困難拉圖斯"
+        ]
+      },
+      "book_snatch_20": {
+        "name": "閃‧索命",
+        "kind": "20",
+        "monsters": [],
+        "bosses": [],
+        "raids": [
+          "horntail"
+        ],
+        "standIn": [
+          "拉圖斯"
+        ]
+      },
+      "book_snatch_30": {
+        "name": "閃‧索命",
+        "kind": "30",
+        "monsters": [],
+        "bosses": [],
+        "raids": [
+          "horntail"
+        ],
+        "standIn": [
+          "困難拉圖斯"
+        ]
+      },
+      "book_elemental_boost_30": {
+        "name": "瞬‧冰火連擊",
+        "kind": "30",
+        "monsters": [],
+        "bosses": [],
+        "raids": [
+          "horntail"
+        ],
+        "standIn": [
+          "困難拉圖斯"
+        ]
+      },
+      "book_rapid_fire_30": {
+        "name": "瞬‧迅雷",
+        "kind": "30",
+        "monsters": [],
+        "bosses": [],
+        "raids": [
+          "horntail"
+        ],
+        "standIn": [
+          "困難拉圖斯"
+        ]
+      },
+      "book_hypnotize_20": {
+        "name": "心靈控制",
+        "kind": "20",
+        "monsters": [],
+        "bosses": [],
+        "raids": [
+          "horntail"
+        ],
+        "standIn": [
+          "拉圖斯"
+        ]
       }
     },
     "mobRate": 0.0003,
