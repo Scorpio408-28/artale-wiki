@@ -6540,7 +6540,7 @@
       "slot": "scroll"
     },
     "book_sharp_eyes_30": {
-      "name": "[技能書] 會心之眼 30〔全職業〕",
+      "name": "[技能書] 會心之眼 30〔弓箭手共用〕",
       "slot": "skillbook"
     },
     "book_achilles_20": {
@@ -7092,7 +7092,7 @@
       "priceSource": "經典楓之谷 v83 NPC 收購價（任務道具）（阿泰爾未公開，待核對）"
     },
     "book_sharp_eyes_20": {
-      "name": "[技能書] 會心之眼 20〔全職業〕",
+      "name": "[技能書] 會心之眼 20〔弓箭手共用〕",
       "slot": "skillbook"
     },
     "book_ice_demon_20": {
@@ -62294,22 +62294,12 @@
     {
       "id": "sharp_eyes",
       "name": "會心之眼",
-      "job": "hero",
+      "job": "bowmaster",
       "tier": 4,
       "kind": "support",
       "jobs": [
-        "hero",
-        "paladin",
-        "dark_knight",
-        "fp_archmage",
-        "il_archmage",
-        "bishop",
         "bowmaster",
-        "marksman",
-        "night_lord",
-        "shadower",
-        "buccaneer",
-        "corsair"
+        "marksman"
       ],
       "weapons": [],
       "maxLevel": 30,
@@ -62321,7 +62311,7 @@
         "20": "殘暴炎魔、海怒斯、尖鼻鯊魚",
         "30": "殘暴炎魔、海怒斯、化石龍長老"
       },
-      "description": "物理爆擊率 +15%、爆擊傷害 +40%，持續 300 秒（全職業四轉共通，法術不適用；Lv.1 經典）"
+      "description": "物理爆擊率 +15%、爆擊傷害 +40%，持續 300 秒（箭神、神射手；會分享給同圖隊友與分身輔助，法術不適用；Lv.1 經典）"
     },
     {
       "id": "dragons_breath",
@@ -63354,7 +63344,7 @@
       "description": "攻擊速度再 +2 段（和快速系列疊加），持續 300 秒（Lv.1 經典）"
     }
   ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "gearPrices": {
     "eq_6d28d4dbe008": [12500, 6250, 0],
     "eq_42d8531366be": [24500, 12250, 0],
