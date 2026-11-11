@@ -62066,8 +62066,8 @@
       "firstPercent": 1750,
       "maxPercent": 3020,
       "targets": 6,
-      "firstMp": 2100,
-      "maxMp": 3500,
+      "firstMp": 525,
+      "maxMp": 875,
       "masterLevel": 10,
       "books": {
         "20": "殘暴炎魔",
@@ -62165,8 +62165,8 @@
       "firstPercent": 1750,
       "maxPercent": 3020,
       "targets": 6,
-      "firstMp": 2100,
-      "maxMp": 3500,
+      "firstMp": 525,
+      "maxMp": 875,
       "masterLevel": 10,
       "books": {
         "20": "殘暴炎魔",
@@ -62279,14 +62279,14 @@
       "firstPercent": 2905,
       "maxPercent": 4525,
       "targets": 6,
-      "firstMp": 3200,
-      "maxMp": 6500,
+      "firstMp": 800,
+      "maxMp": 1625,
       "masterLevel": 10,
       "books": {
         "20": "殘暴炎魔",
         "30": "闇黑龍王"
       },
-      "description": "聖屬性，一次打 6 隻（阿泰爾 MP 3,200～6,500；原作 15 隻、施放 3 秒，文字版不算施放時間）"
+      "description": "聖屬性，一次打 6 隻（MP 文字版打 25 折，阿泰爾 3,200～6,500；原作 15 隻、施放 3 秒，文字版不算施放時間）"
     },
     {
       "id": "sharp_eyes",
@@ -63341,7 +63341,7 @@
       "description": "攻擊速度再 +2 段（和快速系列疊加），持續 300 秒（Lv.1 經典）"
     }
   ],
-  "version": "1.0.7",
+  "version": "1.0.8",
   "gearPrices": {
     "eq_6d28d4dbe008": [12500, 6250, 0],
     "eq_42d8531366be": [24500, 12250, 0],
