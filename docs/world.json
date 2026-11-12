@@ -7609,14 +7609,6 @@
       "name": "[技能書] 天怒 30〔主教〕",
       "slot": "skillbook"
     },
-    "book_triple_throw_30": {
-      "name": "[技能書] 三飛閃 30〔夜使者〕",
-      "slot": "skillbook"
-    },
-    "book_battleship_cannon_30": {
-      "name": "[技能書] 海盜加農炮 30〔槍神〕",
-      "slot": "skillbook"
-    },
     "book_hurricane_30": {
       "name": "[技能書] 暴風神射 30〔箭神〕",
       "slot": "skillbook"
@@ -7625,12 +7617,20 @@
       "name": "[技能書] 光速神弩 30〔神射手〕",
       "slot": "skillbook"
     },
+    "book_triple_throw_30": {
+      "name": "[技能書] 三飛閃 30〔夜使者〕",
+      "slot": "skillbook"
+    },
     "book_boomerang_step_30": {
       "name": "[技能書] 瞬步連擊 30〔暗影神偷〕",
       "slot": "skillbook"
     },
     "book_barrage_30": {
       "name": "[技能書] 閃‧連殺 30〔拳霸〕",
+      "slot": "skillbook"
+    },
+    "book_battleship_cannon_30": {
+      "name": "[技能書] 海盜加農炮 30〔槍神〕",
       "slot": "skillbook"
     },
     "gacha_ticket": {
@@ -8176,6 +8176,26 @@
     "ht_dragon_kreda": {
       "name": "烈風短刃",
       "slot": "weapon"
+    },
+    "eq_5189e01dda21": {
+      "name": "拉圖斯腰帶",
+      "slot": "belt"
+    },
+    "eq_de1ca0eafb5c": {
+      "name": "發條鐘",
+      "slot": "shoulderpad"
+    },
+    "eq_1166ece7c0b8": {
+      "name": "異界靈魂",
+      "slot": "face"
+    },
+    "papulatus_mark": {
+      "name": "拉圖斯記號",
+      "slot": "eye"
+    },
+    "dimension_earrings": {
+      "name": "次元耳環",
+      "slot": "earrings"
     },
     "rainbow_shell": {
       "name": "彩虹蝸牛殼",
@@ -17174,12 +17194,15 @@
       ]
     },
     "ct_727f3f05f3f3": {
-      "name": "玩具城・動力室",
+      "name": "玩具城・鐘塔之根源",
       "sourceName": "Ludibrium: Origin of Clocktower",
       "region": "ludus",
       "district": "clocktower",
-      "minLevel": 1,
-      "monsters": []
+      "minLevel": 100,
+      "monsters": [],
+      "levelRequired": 100,
+      "raid": true,
+      "fieldBoss": "papulatus"
     },
     "lf_a21e2a50fe7e": {
       "name": "神木村",
@@ -22487,6 +22510,17 @@
       "levelRequired": 140,
       "raid": true,
       "fieldBoss": "horntail"
+    },
+    "ct_papulatus_hard": {
+      "name": "玩具城・鐘塔之根源（困難）",
+      "sourceName": "Origin of Clocktower (Hard)",
+      "region": "ludus",
+      "district": "clocktower",
+      "minLevel": 100,
+      "monsters": [],
+      "levelRequired": 100,
+      "raid": true,
+      "fieldBoss": "papulatusHard"
     }
   },
   "monsters": {
@@ -53436,14 +53470,6 @@
           "chance": 0.0003
         },
         {
-          "id": "book_triple_throw_30",
-          "chance": 0.0003
-        },
-        {
-          "id": "book_battleship_cannon_30",
-          "chance": 0.0003
-        },
-        {
           "id": "book_hurricane_30",
           "chance": 0.0003
         },
@@ -53452,11 +53478,19 @@
           "chance": 0.0003
         },
         {
+          "id": "book_triple_throw_30",
+          "chance": 0.0003
+        },
+        {
           "id": "book_boomerang_step_30",
           "chance": 0.0003
         },
         {
           "id": "book_barrage_30",
+          "chance": 0.0003
+        },
+        {
+          "id": "book_battleship_cannon_30",
           "chance": 0.0003
         }
       ]
@@ -58515,6 +58549,264 @@
         "magic"
       ],
       "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack"
+    },
+    "papulatus": {
+      "name": "拉圖斯",
+      "englishName": "Papulatus",
+      "level": 100,
+      "hp": 0,
+      "exp": 6620000,
+      "def": 600,
+      "mdef": 300,
+      "avoid": 12,
+      "parts": [
+        {
+          "key": "clock",
+          "name": "拉圖斯的時鐘",
+          "stage": 1,
+          "hp": 53750000,
+          "def": 600,
+          "mdef": 300,
+          "avoid": 12,
+          "attack": 1080,
+          "effect": {
+            "seal": 0.2,
+            "rock": 0.1,
+            "strike": "黑球"
+          },
+          "effectText": "時間停止（20% 機率這場只能普通攻擊）、黑球（每場必中，最大 HP 10%）"
+        },
+        {
+          "key": "body",
+          "name": "拉圖斯",
+          "stage": 2,
+          "hp": 12450310,
+          "def": 500,
+          "mdef": 500,
+          "avoid": 80,
+          "attack": 1080,
+          "effect": {
+            "corrode": 0.1
+          },
+          "effectText": "推人暈眩（傷害 -10%）"
+        }
+      ],
+      "partOrder": [
+        "clock",
+        "body"
+      ],
+      "stages": {
+        "1": "第 1 階段（拉圖斯的時鐘）",
+        "2": "第 2 階段（拉圖斯）"
+      },
+      "partWord": "型態",
+      "accuracy": 250,
+      "attack": 1080,
+      "map": "ct_727f3f05f3f3",
+      "raid": true,
+      "lootShare": 0,
+      "lootHint": "拉圖斯腰帶、發條鐘、異界靈魂、三轉裝備與披風卷軸",
+      "bookDrop": true,
+      "weaponPool": [
+        "eq_77367f6e32c6",
+        "eq_08f65f57efa2",
+        "eq_0542012b5e73",
+        "eq_b2050f4b7a13",
+        "eq_a5a5c31d211e",
+        "eq_1ca85529da68",
+        "eq_8c6dcc095f96",
+        "eq_52e4c89222f6",
+        "eq_758609970751",
+        "eq_14ca8f45e8a2",
+        "eq_a91940fc18a8",
+        "eq_01694978f594",
+        "eq_1f186ea72d1b",
+        "eq_708dff7d4968",
+        "eq_2863a1e22ff6",
+        "eq_b672850f97f9",
+        "eq_f0294bd89810",
+        "eq_a0bf2c26b516",
+        "eq_3b5870a64075",
+        "eq_3db79e3e5c59",
+        "eq_224673254ea6",
+        "eq_bf05de5edf5d",
+        "eq_d4576a7297f0",
+        "eq_4bbc9b6046d6",
+        "eq_ebcbd23e5dbf",
+        "eq_a15d62239401",
+        "eq_7d26b832098f",
+        "eq_da56bd048cf9",
+        "eq_6d1b13e81d1b",
+        "eq_b4ca5669ecec",
+        "eq_ac404cd43e12",
+        "eq_443bf4c27611",
+        "eq_62ca752d8fb9",
+        "eq_a9d8b1502659"
+      ],
+      "weaponChance": 0.3,
+      "mesoBag": [
+        200000,
+        300000
+      ],
+      "supplies": [
+        {
+          "id": "power_elixir",
+          "min": 3,
+          "max": 5
+        },
+        {
+          "id": "elixir",
+          "min": 5,
+          "max": 10
+        }
+      ],
+      "drops": [
+        {
+          "id": "eq_5189e01dda21",
+          "chance": 0.33
+        },
+        {
+          "id": "eq_de1ca0eafb5c",
+          "chance": 0.33
+        },
+        {
+          "id": "eq_1166ece7c0b8",
+          "chance": 0.2
+        },
+        {
+          "id": "sc_2955889401ae",
+          "chance": 0.2
+        },
+        {
+          "id": "sc_a8b6f557228f",
+          "chance": 0.2
+        },
+        {
+          "id": "sc_a271d9b2e7e5",
+          "chance": 0.2
+        },
+        {
+          "id": "sc_25d7cf23d6e8",
+          "chance": 0.2
+        }
+      ],
+      "boss": true,
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack"
+    },
+    "papulatusHard": {
+      "name": "困難拉圖斯",
+      "englishName": "Papulatus (Hard)",
+      "level": 120,
+      "hp": 0,
+      "exp": 18000000,
+      "def": 600,
+      "mdef": 300,
+      "avoid": 12,
+      "parts": [
+        {
+          "key": "awakened",
+          "name": "覺醒的拉圖斯",
+          "stage": 1,
+          "hp": 160000000,
+          "def": 600,
+          "mdef": 300,
+          "avoid": 12,
+          "level": 120,
+          "attack": 1080,
+          "effect": {
+            "heat": 0.2,
+            "rock": 0.2,
+            "strike": "紅鬧鐘"
+          },
+          "effectText": "時鐘（受到傷害 +20%）、紅鬧鐘（每場必中，最大 HP 20%）"
+        },
+        {
+          "key": "last",
+          "name": "最後的拉圖斯",
+          "stage": 2,
+          "hp": 20000000,
+          "def": 500,
+          "mdef": 500,
+          "avoid": 80,
+          "level": 100,
+          "attack": 1080,
+          "effect": {
+            "corrode": 0.1
+          },
+          "effectText": "推人暈眩（傷害 -10%）"
+        }
+      ],
+      "partOrder": [
+        "awakened",
+        "last"
+      ],
+      "stages": {
+        "1": "第 1 階段（覺醒的拉圖斯）",
+        "2": "第 2 階段（最後的拉圖斯）"
+      },
+      "partWord": "型態",
+      "requiresClear": "papulatus",
+      "accuracy": 250,
+      "attack": 1080,
+      "map": "ct_papulatus_hard",
+      "raid": true,
+      "lootShare": 0,
+      "lootHint": "拉圖斯記號、次元耳環與 Lv.95～100 武器",
+      "bookDrop": true,
+      "weaponPool": [
+        "eq_cdd23388c162",
+        "eq_b82bf1a1ea61",
+        "eq_defb142452aa",
+        "eq_36330cfcd2d8",
+        "eq_b05cc36e143d",
+        "eq_e4a5a60f7e29",
+        "eq_5b220368c73b",
+        "eq_1e6afbc1d2d6",
+        "eq_28e9523dc943",
+        "eq_988af2c6394a",
+        "eq_fc6fa4a87a71",
+        "eq_f0eed71331c8",
+        "eq_ca93ef3bf929",
+        "eq_39078bcd4f82",
+        "eq_e289af9553b9"
+      ],
+      "weaponChance": 0.3,
+      "mesoBag": [
+        500000,
+        800000
+      ],
+      "supplies": [
+        {
+          "id": "power_elixir",
+          "min": 5,
+          "max": 10
+        },
+        {
+          "id": "elixir",
+          "min": 10,
+          "max": 20
+        }
+      ],
+      "drops": [
+        {
+          "id": "papulatus_mark",
+          "chance": 0.1
+        },
+        {
+          "id": "dimension_earrings",
+          "chance": 0.1
+        }
+      ],
+      "boss": true,
+      "attackTypes": [
+        "physical",
+        "magic"
+      ],
+      "attackTypeSource": "經典v83有魔攻；文字版暫定物理／魔法交替，威力沿用既有attack"
     }
   },
   "skills": [
@@ -63341,7 +63633,7 @@
       "description": "攻擊速度再 +2 段（和快速系列疊加），持續 300 秒（Lv.1 經典）"
     }
   ],
-  "version": "1.0.8",
+  "version": "1.1.0",
   "gearPrices": {
     "eq_6d28d4dbe008": [12500, 6250, 0],
     "eq_42d8531366be": [24500, 12250, 0],
@@ -66094,7 +66386,9 @@
         "bosses": [
           "leviathan"
         ],
-        "raids": []
+        "raids": [
+          "papulatus"
+        ]
       },
       "book_rush_20": {
         "name": "究極突刺",
@@ -66123,7 +66417,9 @@
           "frontier_overseer"
         ],
         "bosses": [],
-        "raids": []
+        "raids": [
+          "papulatusHard"
+        ]
       },
       "book_brandish_20": {
         "name": "無雙劍舞",
@@ -66133,6 +66429,15 @@
         ],
         "bosses": [],
         "raids": []
+      },
+      "book_brandish_30": {
+        "name": "無雙劍舞",
+        "kind": "30",
+        "monsters": [],
+        "bosses": [],
+        "raids": [
+          "papulatus"
+        ]
       },
       "book_enrage_30": {
         "name": "鬥氣爆發",
@@ -66180,7 +66485,9 @@
         "bosses": [
           "lyka"
         ],
-        "raids": []
+        "raids": [
+          "papulatus"
+        ]
       },
       "book_heavens_hammer_30": {
         "name": "鬼神之擊",
@@ -66229,6 +66536,15 @@
         ],
         "raids": []
       },
+      "book_infinity_20": {
+        "name": "魔力無限",
+        "kind": "20",
+        "monsters": [],
+        "bosses": [],
+        "raids": [
+          "papulatus"
+        ]
+      },
       "book_fire_demon_20": {
         "name": "炎靈地獄",
         "kind": "20",
@@ -66247,7 +66563,9 @@
         "bosses": [
           "lyka"
         ],
-        "raids": []
+        "raids": [
+          "papulatus"
+        ]
       },
       "book_elquines_20": {
         "name": "召喚冰魔",
@@ -66265,7 +66583,9 @@
           "mob_66441f95eecd"
         ],
         "bosses": [],
-        "raids": []
+        "raids": [
+          "papulatusHard"
+        ]
       },
       "book_paralyze_20": {
         "name": "劇毒麻痺",
@@ -66285,7 +66605,9 @@
         "bosses": [
           "leviathan"
         ],
-        "raids": []
+        "raids": [
+          "papulatusHard"
+        ]
       },
       "book_meteor_shower_30": {
         "name": "火流星",
@@ -66316,7 +66638,9 @@
         "bosses": [
           "lyka"
         ],
-        "raids": []
+        "raids": [
+          "papulatus"
+        ]
       },
       "book_ifrit_20": {
         "name": "召喚火炎神",
@@ -66326,6 +66650,15 @@
         ],
         "bosses": [],
         "raids": []
+      },
+      "book_ifrit_30": {
+        "name": "召喚火炎神",
+        "kind": "30",
+        "monsters": [],
+        "bosses": [],
+        "raids": [
+          "papulatusHard"
+        ]
       },
       "book_chain_lightning_20": {
         "name": "閃電連擊",
@@ -66345,7 +66678,9 @@
         "bosses": [
           "leviathan"
         ],
-        "raids": []
+        "raids": [
+          "papulatusHard"
+        ]
       },
       "book_blizzard_4th_30": {
         "name": "暴風雪",
@@ -66386,6 +66721,15 @@
         "bosses": [],
         "raids": []
       },
+      "book_angel_ray_30": {
+        "name": "天使之箭",
+        "kind": "30",
+        "monsters": [],
+        "bosses": [],
+        "raids": [
+          "papulatus"
+        ]
+      },
       "book_genesis_30": {
         "name": "天怒",
         "kind": "30",
@@ -66423,7 +66767,9 @@
           "mob_b298aa15ba5d"
         ],
         "bosses": [],
-        "raids": []
+        "raids": [
+          "papulatus"
+        ]
       },
       "book_marksman_boost_20": {
         "name": "弩術精通",
@@ -66433,7 +66779,9 @@
           "mob_769160b55ad1"
         ],
         "bosses": [],
-        "raids": []
+        "raids": [
+          "papulatus"
+        ]
       },
       "book_hurricane_20": {
         "name": "暴風神射",
@@ -66444,6 +66792,18 @@
         ],
         "bosses": [],
         "raids": []
+      },
+      "book_hurricane_30": {
+        "name": "暴風神射",
+        "kind": "30",
+        "monsters": [
+          "frontier_overseer"
+        ],
+        "bosses": [],
+        "raids": [
+          "papulatusHard",
+          "papulatus"
+        ]
       },
       "book_phoenix_20": {
         "name": "召喚鳳凰",
@@ -66501,6 +66861,17 @@
         "bosses": [],
         "raids": []
       },
+      "book_piercing_arrow_30": {
+        "name": "光速神弩",
+        "kind": "30",
+        "monsters": [
+          "frontier_overseer"
+        ],
+        "bosses": [],
+        "raids": [
+          "papulatus"
+        ]
+      },
       "book_frostprey_20": {
         "name": "召喚銀隼",
         "kind": "20",
@@ -66519,7 +66890,9 @@
           "mob_3009238c3b28"
         ],
         "bosses": [],
-        "raids": []
+        "raids": [
+          "papulatusHard"
+        ]
       },
       "book_blind_20": {
         "name": "黑暗狙擊",
@@ -66574,7 +66947,9 @@
           "mob_a212b205ae3e"
         ],
         "bosses": [],
-        "raids": []
+        "raids": [
+          "papulatus"
+        ]
       },
       "book_taunt_nl_20": {
         "name": "挑釁",
@@ -66587,6 +66962,15 @@
           "lyka"
         ],
         "raids": []
+      },
+      "book_taunt_nl_30": {
+        "name": "挑釁",
+        "kind": "30",
+        "monsters": [],
+        "bosses": [],
+        "raids": [
+          "papulatusHard"
+        ]
       },
       "book_ninja_ambush_nl_20": {
         "name": "忍影瞬殺",
@@ -66614,7 +66998,9 @@
           "mob_1f5b92e9aebb"
         ],
         "bosses": [],
-        "raids": []
+        "raids": [
+          "papulatus"
+        ]
       },
       "book_triple_throw_30": {
         "name": "三飛閃",
@@ -66635,6 +67021,15 @@
         ],
         "bosses": [],
         "raids": []
+      },
+      "book_ninja_storm_30": {
+        "name": "忍術風影",
+        "kind": "30",
+        "monsters": [],
+        "bosses": [],
+        "raids": [
+          "papulatusHard"
+        ]
       },
       "book_shadow_shifter_plus_20": {
         "name": "瞬身迴避+",
@@ -66673,7 +67068,9 @@
           "mob_6c5402309705"
         ],
         "bosses": [],
-        "raids": []
+        "raids": [
+          "papulatusHard"
+        ]
       },
       "book_smokescreen_30": {
         "name": "煙霧彈",
@@ -66695,6 +67092,17 @@
           "lyka"
         ],
         "raids": []
+      },
+      "book_boomerang_step_30": {
+        "name": "瞬步連擊",
+        "kind": "30",
+        "monsters": [
+          "frontier_overseer"
+        ],
+        "bosses": [],
+        "raids": [
+          "papulatus"
+        ]
       },
       "book_dragon_strike_20": {
         "name": "魔龍降臨",
@@ -66758,6 +67166,33 @@
         ],
         "raids": []
       },
+      "book_demolition_30": {
+        "name": "閃‧爆破",
+        "kind": "30",
+        "monsters": [],
+        "bosses": [],
+        "raids": [
+          "papulatusHard"
+        ]
+      },
+      "book_snatch_20": {
+        "name": "閃‧索命",
+        "kind": "20",
+        "monsters": [],
+        "bosses": [],
+        "raids": [
+          "papulatus"
+        ]
+      },
+      "book_snatch_30": {
+        "name": "閃‧索命",
+        "kind": "30",
+        "monsters": [],
+        "bosses": [],
+        "raids": [
+          "papulatusHard"
+        ]
+      },
       "book_barrage_20": {
         "name": "閃‧連殺",
         "kind": "20",
@@ -66769,6 +67204,17 @@
           "dodo"
         ],
         "raids": []
+      },
+      "book_barrage_30": {
+        "name": "閃‧連殺",
+        "kind": "30",
+        "monsters": [
+          "frontier_overseer"
+        ],
+        "bosses": [],
+        "raids": [
+          "papulatus"
+        ]
       },
       "book_speed_infusion_buc_20": {
         "name": "最終極速",
@@ -66796,6 +67242,15 @@
         ],
         "bosses": [],
         "raids": []
+      },
+      "book_elemental_boost_30": {
+        "name": "瞬‧冰火連擊",
+        "kind": "30",
+        "monsters": [],
+        "bosses": [],
+        "raids": [
+          "papulatusHard"
+        ]
       },
       "book_wrath_of_octopi_20": {
         "name": "砲台章魚王",
@@ -66835,6 +67290,15 @@
         ],
         "raids": []
       },
+      "book_rapid_fire_30": {
+        "name": "瞬‧迅雷",
+        "kind": "30",
+        "monsters": [],
+        "bosses": [],
+        "raids": [
+          "papulatusHard"
+        ]
+      },
       "book_battleship_cannon_20": {
         "name": "海盜加農炮",
         "kind": "20",
@@ -66856,7 +67320,9 @@
         "bosses": [
           "leviathan"
         ],
-        "raids": []
+        "raids": [
+          "papulatusHard"
+        ]
       },
       "book_battleship_torpedo_20": {
         "name": "海盜魚雷",
@@ -66865,7 +67331,9 @@
           "mob_f735482139bb"
         ],
         "bosses": [],
-        "raids": []
+        "raids": [
+          "papulatus"
+        ]
       },
       "book_battleship_torpedo_30": {
         "name": "海盜魚雷",
@@ -66878,41 +67346,14 @@
         ],
         "raids": []
       },
-      "book_hurricane_30": {
-        "name": "暴風神射",
-        "kind": "30",
-        "monsters": [
-          "frontier_overseer"
-        ],
+      "book_hypnotize_20": {
+        "name": "心靈控制",
+        "kind": "20",
+        "monsters": [],
         "bosses": [],
-        "raids": []
-      },
-      "book_piercing_arrow_30": {
-        "name": "光速神弩",
-        "kind": "30",
-        "monsters": [
-          "frontier_overseer"
-        ],
-        "bosses": [],
-        "raids": []
-      },
-      "book_boomerang_step_30": {
-        "name": "瞬步連擊",
-        "kind": "30",
-        "monsters": [
-          "frontier_overseer"
-        ],
-        "bosses": [],
-        "raids": []
-      },
-      "book_barrage_30": {
-        "name": "閃‧連殺",
-        "kind": "30",
-        "monsters": [
-          "frontier_overseer"
-        ],
-        "bosses": [],
-        "raids": []
+        "raids": [
+          "papulatus"
+        ]
       },
       "book_monster_magnet_30": {
         "name": "絕對引力",
@@ -66938,18 +67379,6 @@
           "海怒斯"
         ]
       },
-      "book_brandish_30": {
-        "name": "無雙劍舞",
-        "kind": "30",
-        "monsters": [],
-        "bosses": [],
-        "raids": [
-          "horntail"
-        ],
-        "standIn": [
-          "拉圖斯"
-        ]
-      },
       "book_big_bang_30": {
         "name": "核爆術",
         "kind": "30",
@@ -66962,54 +67391,6 @@
           "海怒斯"
         ]
       },
-      "book_infinity_20": {
-        "name": "魔力無限",
-        "kind": "20",
-        "monsters": [],
-        "bosses": [],
-        "raids": [
-          "horntail"
-        ],
-        "standIn": [
-          "拉圖斯"
-        ]
-      },
-      "book_ifrit_30": {
-        "name": "召喚火炎神",
-        "kind": "30",
-        "monsters": [],
-        "bosses": [],
-        "raids": [
-          "horntail"
-        ],
-        "standIn": [
-          "困難拉圖斯"
-        ]
-      },
-      "book_angel_ray_30": {
-        "name": "天使之箭",
-        "kind": "30",
-        "monsters": [],
-        "bosses": [],
-        "raids": [
-          "horntail"
-        ],
-        "standIn": [
-          "拉圖斯"
-        ]
-      },
-      "book_taunt_nl_30": {
-        "name": "挑釁",
-        "kind": "30",
-        "monsters": [],
-        "bosses": [],
-        "raids": [
-          "horntail"
-        ],
-        "standIn": [
-          "困難拉圖斯"
-        ]
-      },
       "book_ninja_ambush_nl_30": {
         "name": "忍影瞬殺",
         "kind": "30",
@@ -67020,90 +67401,6 @@
         ],
         "standIn": [
           "海怒斯"
-        ]
-      },
-      "book_ninja_storm_30": {
-        "name": "忍術風影",
-        "kind": "30",
-        "monsters": [],
-        "bosses": [],
-        "raids": [
-          "horntail"
-        ],
-        "standIn": [
-          "困難拉圖斯"
-        ]
-      },
-      "book_demolition_30": {
-        "name": "閃‧爆破",
-        "kind": "30",
-        "monsters": [],
-        "bosses": [],
-        "raids": [
-          "horntail"
-        ],
-        "standIn": [
-          "困難拉圖斯"
-        ]
-      },
-      "book_snatch_20": {
-        "name": "閃‧索命",
-        "kind": "20",
-        "monsters": [],
-        "bosses": [],
-        "raids": [
-          "horntail"
-        ],
-        "standIn": [
-          "拉圖斯"
-        ]
-      },
-      "book_snatch_30": {
-        "name": "閃‧索命",
-        "kind": "30",
-        "monsters": [],
-        "bosses": [],
-        "raids": [
-          "horntail"
-        ],
-        "standIn": [
-          "困難拉圖斯"
-        ]
-      },
-      "book_elemental_boost_30": {
-        "name": "瞬‧冰火連擊",
-        "kind": "30",
-        "monsters": [],
-        "bosses": [],
-        "raids": [
-          "horntail"
-        ],
-        "standIn": [
-          "困難拉圖斯"
-        ]
-      },
-      "book_rapid_fire_30": {
-        "name": "瞬‧迅雷",
-        "kind": "30",
-        "monsters": [],
-        "bosses": [],
-        "raids": [
-          "horntail"
-        ],
-        "standIn": [
-          "困難拉圖斯"
-        ]
-      },
-      "book_hypnotize_20": {
-        "name": "心靈控制",
-        "kind": "20",
-        "monsters": [],
-        "bosses": [],
-        "raids": [
-          "horntail"
-        ],
-        "standIn": [
-          "拉圖斯"
         ]
       }
     },
