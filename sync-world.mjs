@@ -30,6 +30,18 @@ const items = Object.fromEntries([...itemIds].filter(id => source.items[id]).map
 const gearPrices = Object.fromEntries(Object.entries(source.items)
   .filter(([id, item]) => id.startsWith('eq_') && item.price > 0)
   .map(([id, item]) => [id, [item.price, sellPrice(item), item.priceSource === '圖鑑 NPC 售價' ? 1 : 0]]));
+// 遊戲自己加的裝備（社群圖鑑沒有的：龍王項鍊與翅膀、龍系列補件、拉圖斯記號、次元耳環、自訂戒指…）：
+// 照圖鑑的格式輸出，資料站裝備頁併進清單；另附特殊效果、能不能交易。
+const statsModule = await load('src/stats.js').catch(() => null);
+const market = await load('src/market.js').catch(() => null);
+const ALL_JOBS = ['BEGINNER', 'WARRIOR', 'MAGICIAN', 'BOWMAN', 'THIEF', 'PIRATE'];
+const customEquipment = Object.entries(source.items)
+  .filter(([id, item]) => !id.startsWith('eq_') && item.category === 'equip' && !item.ammo)
+  .map(([id, item]) => ({ id, kind: 'equipment', name: item.name, sourceName: item.source || '文字版自訂', type: item.catalogType || String(item.type || item.slot).toUpperCase(),
+    level: item.level || 0, jobs: item.jobs?.length ? item.jobs : ALL_JOBS, requirements: item.requirements || {}, stats: item.stats || {},
+    acquisition: { monsters: [], npcs: [], quests: [] }, custom: true,
+    ...(item.effects && statsModule?.effectText ? { effect: statsModule.effectText(item.effects) } : {}),
+    ...(market?.tradeable && !market.tradeable(id) ? { untradeable: true } : {}) }));
 const previousSkills = new Map(existing.skills.map(skill => [skill.id, skill]));
 const skillCatalog = Object.entries(skills).map(([id, skill]) => {
   const first = skillDetails(id, 1);
@@ -70,6 +82,8 @@ const world = {
   jobs: source.jobs, items, gearPrices, skills: skillCatalog,
   maps, monsters,
   fieldBosses: source.fieldBosses,
+  customEquipment,
+  ...(source.RING_BOX_ODDS ? { ringBox: source.RING_BOX_ODDS } : {}),
   ...(skillBooks ? { skillBooks: { zakum: skillBooks.ZAKUM_BOOKS, custom: skillBooks.CUSTOM_UNLOCKS, success: skillBooks.BOOK_SUCCESS, needLevel: skillBooks.BOOK_NEED_LEVEL,
     ...(skillBooks.BOOK_SOURCES ? { sources: skillBooks.BOOK_SOURCES, mobRate: skillBooks.BOOK_MOB_RATE, bossRate: skillBooks.BOOK_BOSS_RATE } : {}) } } : {}),
   ...(regions ? { regions: regions.worldRegions, ships: regions.shipRoutes } : {}),

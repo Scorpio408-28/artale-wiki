@@ -48,9 +48,25 @@ function dropSources(world,id){
   return Object.entries(world.monsters).map(([monsterId,monster])=>({monster,chance:(monster.drops||[]).filter(drop=>drop.id===id).reduce((sum,drop)=>sum+drop.chance,0),maps:mapsOf(monsterId),from:(parent=>parent?{name:parent[1].name,maps:mapsOf(parent[0])}:null)(splitParent(world,monsterId))}))
     .filter(entry=>entry.chance>0).sort((a,b)=>b.chance-a.chance||a.monster.level-b.monster.level);
 }
+// 野王、突襲王會掉這件的方式：固定掉率、裝備抽獎（抽中機率＋池子幾件）、戒指寶箱（王掉寶箱的機率×開出機率）。
+function bossSources(world,id){
+  if(!world?.fieldBosses)return[];
+  const box=(world.ringBox||[]).find(entry=>entry.id===id),out=[];
+  for(const boss of Object.values(world.fieldBosses)){
+    const ways=[];
+    const chance=(boss.drops||[]).filter(drop=>drop.id===id).reduce((sum,drop)=>sum+drop.chance,0);
+    if(chance>0)ways.push(percent(chance));
+    if((boss.weaponPool||[]).includes(id))ways.push(`裝備抽獎 ${percent(boss.weaponChance)}，抽中後 ${boss.weaponPool.length} 件隨機 1 件`);
+    const boxDrop=box&&(boss.drops||[]).find(drop=>drop.id==='ring_box');
+    if(boxDrop)ways.push(`戒指寶箱 ${percent(boxDrop.chance)}，開出 ${percent(box.chance)}`);
+    if(ways.length)out.push({boss,raid:Boolean(boss.raid||world.maps?.[boss.map]?.raid),ways,map:world.maps?.[boss.map]?.name||''});
+  }
+  return out;
+}
 function dropTable(world,id){
-  const rows=dropSources(world,id);
-  return rows.length?`<div class="data-wrap"><table><thead><tr><th>怪物</th><th>等級</th><th>掉率</th><th>出現地圖</th></tr></thead><tbody>${rows.map(row=>`<tr><td><strong>${esc(row.monster.name)}</strong></td><td>${row.monster.level}</td><td>${percent(row.chance)}</td><td>${row.maps.length?row.maps.map(esc).join('、'):row.from?`由${esc(row.from.name)}打倒後分裂（${row.from.maps.map(esc).join('、')||'尚無地圖'}）`:'尚無地圖'}</td></tr>`).join('')}</tbody></table></div>`:'<p class="muted">目前文字版沒有怪物會掉這件物品。</p>';
+  const rows=dropSources(world,id),bossRows=bossSources(world,id).map(row=>`<tr><td><strong>${row.raid?'⚔️ 突襲王 ':'👑 野王 '}${esc(row.boss.name)}</strong></td><td>${row.boss.level}</td><td>${row.ways.map(esc).join('<br>')}</td><td>${esc(row.map)}${row.raid?'（主面板「⚔️ 突襲隊」組隊開打，打倒時隊員每人各抽一次）':''}</td></tr>`).join('');
+  if(bossRows)return `<div class="data-wrap"><table><thead><tr><th>怪物</th><th>等級</th><th>掉率</th><th>出現地圖</th></tr></thead><tbody>${bossRows}${rows.map(row=>`<tr><td><strong>${esc(row.monster.name)}</strong></td><td>${row.monster.level}</td><td>${percent(row.chance)}</td><td>${row.maps.length?row.maps.map(esc).join('、'):row.from?`由${esc(row.from.name)}打倒後分裂（${row.from.maps.map(esc).join('、')||'尚無地圖'}）`:'尚無地圖'}</td></tr>`).join('')}</tbody></table></div>`;
+  return rows.length?`<div class="data-wrap"><table><thead><tr><th>怪物</th><th>等級</th><th>掉率</th><th>出現地圖</th></tr></thead><tbody>${rows.map(row=>`<tr><td><strong>${esc(row.monster.name)}</strong></td><td>${row.monster.level}</td><td>${percent(row.chance)}</td><td>${row.maps.length?row.maps.map(esc).join('、'):row.from?`由${esc(row.from.name)}打倒後分裂（${row.from.maps.map(esc).join('、')||'尚無地圖'}）`:'尚無地圖'}</td></tr>`).join('')}</tbody></table></div>`:'<p class="muted">目前文字版沒有怪物或王會掉這件物品。</p>';
 }
 const itemPage=(world,id)=>{const slot=world?.items[id]?.slot;return slot==='material'?`materials.html?id=${encodeURIComponent(id)}`:id.startsWith('sc_')?`scrolls.html?id=${encodeURIComponent(id)}`:id.startsWith('eq_')?`equipment.html?id=${encodeURIComponent(id)}`:null;};
 function showDetail(item){
@@ -66,6 +82,7 @@ function showDetail(item){
     <div><small>職業</small><p>${esc(item.jobs?.map(x=>jobNames[x]||x).join('、')||'來源未列出')}</p></div><div><small>NPC 販售</small><p>${npcs.length?npcs.map(x=>`${esc(x.name)} · ${number(x.price)} 楓幣`).join('<br>'):'來源未列出'}</p></div>
     <div><small>怪物掉落</small><p>${drops.length?drops.map(x=>esc(x.name)).join('、'):'來源未列出'}</p></div><div><small>任務取得</small><p>${quests.length?quests.map(x=>esc(x.name)).join('、'):'來源未列出'}</p></div>
     ${gamePrice?`<div><small>文字版商店</small><p>${gamePrice[2]?`${number(gamePrice[0])} 楓幣（原作 NPC 售價）`:'不賣，只能打怪取得'}</p></div><div><small>賣給 NPC</small><p>${number(gamePrice[1])} 楓幣${gamePrice[2]?'（售價一半）':''}</p></div>`:''}</div>
+    ${item.effect||item.untradeable||item.custom?`<div class="detail-grid">${item.effect?`<div><small>特殊效果</small><p>${esc(item.effect)}</p></div>`:''}<div><small>交易</small><p>${item.untradeable?'不能交易、不能上拍賣場':'可以交易'}</p></div>${item.custom?`<div><small>資料來源</small><p>${esc(item.sourceName)}</p></div>`:''}</div>`:''}
     <h3>文字版哪些怪會掉</h3>${dropTable(gameWorld,item.id)}
     <p class="source-note">「文字版哪些怪會掉」照玩家圖鑑；裝備、卷軸、藥水的掉率照經典楓之谷 v83 參考資料，阿泰爾未公開官方掉率。</p>
     <p class="source-note">這是玩家社群圖鑑資料；本遊戲商店只賣原作 NPC 有賣的，其餘要打怪取得；特殊屬性仍在逐步接入戰鬥公式。<a href="${item.kind==='scrolls'?'https://www.artalemaplestory.com/zh/scrolls':'https://www.artalemaplestory.com/zh/equipment'}" target="_blank" rel="noopener noreferrer">查看資料來源 ↗</a></p>`;
@@ -74,11 +91,11 @@ function showDetail(item){
   panel.scrollIntoView({behavior:'smooth',block:'start'});
 }
 function itemCatalog(catalog,kind){
-  const list=kind==='equipment'?catalog.equipment:catalog.scrolls;
+  const custom=kind==='equipment'?(gameWorld?.customEquipment||[]):[],list=kind==='equipment'?[...catalog.equipment,...custom]:catalog.scrolls;
   const title=kind==='equipment'?'裝備圖鑑':'卷軸圖鑑';
   const source=kind==='equipment'?'https://www.artalemaplestory.com/zh/equipment':'https://www.artalemaplestory.com/zh/scrolls';
   const types=[...new Set(list.map(x=>x.type))].sort((a,b)=>typeName(a).localeCompare(typeName(b),'zh-Hant'));
-  root.innerHTML=head('ITEM DATABASE',title,`收錄 ${number(list.length)} 筆玩家社群資料，包含屬性、取得來源與有列出的 NPC 售價。可點名稱查看詳情。`)+
+  root.innerHTML=head('ITEM DATABASE',title,`收錄 ${number(list.length-custom.length)} 筆玩家社群資料${custom.length?`，另加文字版自己加的 ${custom.length} 件（王的專屬飾品、自訂戒指等）`:''}，包含屬性、取得來源與有列出的 NPC 售價。可點名稱查看詳情。`)+
     `<div class="notice">這是資料快照，不保證全部已在台服開放；文字版商店只賣原作 NPC 有賣的裝備與卷軸，其餘打怪取得；部分特殊屬性仍未套入戰鬥公式。<a href="changelog.html">查看資料說明</a></div>
     <div class="tools"><label class="field">搜尋名稱<input id="query" type="search" placeholder="輸入物品名稱或英文名稱" autocomplete="off"></label><label class="field">部位<select id="type"><option value="">全部部位</option>${types.map(x=>`<option value="${esc(x)}">${esc(typeName(x))}</option>`).join('')}</select></label>
     ${kind==='equipment'?'<label class="field">最高需求等級<select id="level"><option value="">全部等級</option><option value="10">Lv.10 以下</option><option value="30">Lv.30 以下</option><option value="70">Lv.70 以下</option><option value="120">Lv.120 以下</option></select></label>':'<label class="field">成功率<select id="rate"><option value="">全部成功率</option><option>10%</option><option>30%</option><option>60%</option><option>70%</option><option>100%</option></select></label>'}</div>
@@ -161,7 +178,7 @@ function mapsPage(world){const entries=Object.entries(world.maps),regions=world.
   const fares=ships.filter(s=>s.price).map(s=>`${esc(s.name)} ${s.price.toLocaleString('en-US')} 楓幣`).join('、');
   root.innerHTML=head('WORLD ATLAS','地圖','目前 Telegram 文字版遊戲的地圖。點區域可縮小範圍；名稱與怪物組成以遊戲資料為準。')+
   `<div class="notice">所有地圖可自由前往；等級只是建議。跨島不用等船、直接到達，只收船票（原作每 10 分鐘一班，票價照經典楓之谷）${fares?`：${fares}`:''}。下方「原作路線」照經典楓之谷 v83 的傳送點，從所屬城鎮的主城算起，只供參考；標示文字版自訂的邊境高地使用自訂連接路線。</div>${featured}<div class="tools"><label class="field">區域<select id="region"><option value="">全部區域</option>${regions.map(r=>`<option value="${r.id}">${esc(r.name)}</option>`).join('')}</select></label><label class="field">城鎮<select id="district"><option value="">全部城鎮</option>${regions.flatMap(r=>r.districts.map(d=>`<option value="${d.id}" data-region="${r.id}">${esc(d.name)}</option>`)).join('')}</select></label><label class="field">搜尋地圖<input id="map-query" type="search" placeholder="輸入地圖或怪物名稱"></label></div><div class="list-cards" id="map-list"></div>`;
-  const render=()=>{const reg=root.querySelector('#region').value,district=root.querySelector('#district').value,q=root.querySelector('#map-query').value.trim();root.querySelector('#map-list').innerHTML=entries.filter(([,map])=>(!reg||map.region===reg)&&(!district||map.district===district)&&(!q||map.name.includes(q)||map.monsters.some(id=>world.monsters[id]?.name.includes(q)))).map(([,map])=>`<article class="list-card"><span class="pill">${esc(regionName(map.region))}</span><h3>${esc(map.name)}</h3><p>建議等級 ${esc(level(map.minLevel))} · ${map.monsters.length?map.monsters.map(id=>esc(world.monsters[id]?.name||id)).join('、'):'安全區'}${map.fieldBoss?' · 👑 '+esc(world.fieldBosses[map.fieldBoss]?.name):''}</p>${map.lootHint?`<p>🎁 ${esc(map.lootHint)}</p>`:""}${map.custom?`<p class="muted">文字版自訂區域：地圖、怪物、數值與掉落配置皆為自訂。</p>`:""}${map.shops?`<p>🏪 ${map.shops.map(n=>`${esc(n.type)}：${esc(n.name)}${n.place?`（${esc(n.place)}）`:''}`).join('、')}</p>`:''}${map.route?`<p class="muted">🧭 ${map.custom?"文字版路線":"原作路線"}：${routeText(map.route)}</p>`:''}</article>`).join('')||'<p class="muted">找不到符合的地圖。</p>';};root.querySelector('#region').onchange=()=>{root.querySelector('#district').value='';render();};root.querySelector('#district').onchange=()=>{const option=root.querySelector('#district').selectedOptions[0];if(option?.dataset.region)root.querySelector('#region').value=option.dataset.region;render();};root.querySelector('#map-query').oninput=render;render();}
+  const render=()=>{const reg=root.querySelector('#region').value,district=root.querySelector('#district').value,q=root.querySelector('#map-query').value.trim();root.querySelector('#map-list').innerHTML=entries.filter(([,map])=>(!reg||map.region===reg)&&(!district||map.district===district)&&(!q||map.name.includes(q)||map.monsters.some(id=>world.monsters[id]?.name.includes(q)))).map(([,map])=>`<article class="list-card"><span class="pill">${esc(regionName(map.region))}</span><h3>${esc(map.name)}</h3><p>建議等級 ${esc(level(map.minLevel))} · ${map.monsters.length?map.monsters.map(id=>esc(world.monsters[id]?.name||id)).join('、'):map.raid?'突襲王房（「⚔️ 突襲隊」組隊開打）':'安全區'}${map.fieldBoss?' · 👑 '+esc(world.fieldBosses[map.fieldBoss]?.name):''}</p>${map.lootHint?`<p>🎁 ${esc(map.lootHint)}</p>`:""}${map.custom?`<p class="muted">文字版自訂區域：地圖、怪物、數值與掉落配置皆為自訂。</p>`:""}${map.shops?`<p>🏪 ${map.shops.map(n=>`${esc(n.type)}：${esc(n.name)}${n.place?`（${esc(n.place)}）`:''}`).join('、')}</p>`:''}${map.route?`<p class="muted">🧭 ${map.custom?"文字版路線":"原作路線"}：${routeText(map.route)}</p>`:''}</article>`).join('')||'<p class="muted">找不到符合的地圖。</p>';};root.querySelector('#region').onchange=()=>{root.querySelector('#district').value='';render();};root.querySelector('#district').onchange=()=>{const option=root.querySelector('#district').selectedOptions[0];if(option?.dataset.region)root.querySelector('#region').value=option.dataset.region;render();};root.querySelector('#map-query').oninput=render;render();}
 function monstersPage(world){const entries=Object.entries(world.monsters).sort((a,b)=>a[1].level-b[1].level);root.innerHTML=head('BESTIARY','怪物','目前文字版遊戲已放入的普通怪物。數值含試作設定，與阿泰爾正式版不一定一致。')+
   '<div class="notice">v0.12.32：有經典 v83 魔攻資料的怪物，文字版暫定物理／魔法交替反擊（第一下物理），分別由物防／魔防減傷；威力沿用既有設定。查無資料者維持物理；邊境高地怪物則自訂為物理／魔法交替。這不是原作的施放頻率，每點防禦減傷 0.5 也是文字版暫定規則。</div>'+
   '<div class="notice">掉什麼對照玩家圖鑑；裝備、卷軸、藥水的機率照經典楓之谷 v83 參考資料（HeavenMS），阿泰爾未公開官方掉率；雜物掉率是文字版暫定值。邊境高地的怪物與掉落配置為文字版自訂，卷軸仍使用既有稀有度規則。</div><div class="tools"><label class="field">搜尋怪物<input id="monster-query" type="search" placeholder="輸入怪物或掉落名稱"></label></div><div class="data-wrap"><table><thead><tr><th>怪物</th><th>等級</th><th>HP</th><th>EXP</th><th>文字版掉落池</th></tr></thead><tbody id="monster-rows"></tbody></table></div>';

@@ -67406,5 +67406,687 @@
     },
     "mobRate": 0.0003,
     "bossRate": 0.04
-  }
+  },
+  "customEquipment": [
+    {
+      "id": "ht_blue_dragon_shield",
+      "kind": "equipment",
+      "name": "青龍盾牌",
+      "sourceName": "經典楓之谷 v83（圖鑑快照沒有）",
+      "type": "SHIELD",
+      "level": 110,
+      "jobs": [
+        "WARRIOR"
+      ],
+      "requirements": {
+        "str": 340,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "str": 7,
+        "dex": 4,
+        "def": 78,
+        "mdef": 30,
+        "avoidability": 5,
+        "upgradeSlots": 7
+      },
+      "acquisition": {
+        "monsters": [],
+        "npcs": [],
+        "quests": []
+      },
+      "custom": true
+    },
+    {
+      "id": "ht_gold_dragon_crown",
+      "kind": "equipment",
+      "name": "黃金龍頭冠",
+      "sourceName": "經典楓之谷 v83（圖鑑快照沒有）",
+      "type": "HAT",
+      "level": 110,
+      "jobs": [
+        "MAGICIAN"
+      ],
+      "requirements": {
+        "str": 0,
+        "dex": 0,
+        "int": 338,
+        "luk": 113
+      },
+      "stats": {
+        "int": 5,
+        "luk": 5,
+        "mp": 25,
+        "def": 56,
+        "mdef": 85,
+        "upgradeSlots": 7
+      },
+      "acquisition": {
+        "monsters": [],
+        "npcs": [],
+        "quests": []
+      },
+      "custom": true
+    },
+    {
+      "id": "ht_blue_elemental_gloves",
+      "kind": "equipment",
+      "name": "藍色羅達手套",
+      "sourceName": "經典楓之谷 v83（圖鑑快照沒有）",
+      "type": "GLOVES",
+      "level": 110,
+      "jobs": [
+        "MAGICIAN"
+      ],
+      "requirements": {
+        "str": 0,
+        "dex": 0,
+        "int": 338,
+        "luk": 113
+      },
+      "stats": {
+        "int": 5,
+        "luk": 5,
+        "def": 45,
+        "mdef": 15,
+        "upgradeSlots": 5
+      },
+      "acquisition": {
+        "monsters": [],
+        "npcs": [],
+        "quests": []
+      },
+      "custom": true
+    },
+    {
+      "id": "ht_blue_elemental_shoes",
+      "kind": "equipment",
+      "name": "藍色羅達鞋",
+      "sourceName": "經典楓之谷 v83（圖鑑快照沒有）",
+      "type": "SHOES",
+      "level": 110,
+      "jobs": [
+        "MAGICIAN"
+      ],
+      "requirements": {
+        "str": 0,
+        "dex": 0,
+        "int": 338,
+        "luk": 113
+      },
+      "stats": {
+        "int": 4,
+        "luk": 3,
+        "matk": 1,
+        "def": 43,
+        "mdef": 21,
+        "upgradeSlots": 5
+      },
+      "acquisition": {
+        "monsters": [],
+        "npcs": [],
+        "quests": []
+      },
+      "custom": true
+    },
+    {
+      "id": "ht_red_hunter_hat",
+      "kind": "equipment",
+      "name": "紅色獵人帽",
+      "sourceName": "經典楓之谷 v83（圖鑑快照沒有）",
+      "type": "HAT",
+      "level": 110,
+      "jobs": [
+        "BOWMAN"
+      ],
+      "requirements": {
+        "str": 0,
+        "dex": 340,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "str": 2,
+        "dex": 6,
+        "hp": 20,
+        "def": 69,
+        "upgradeSlots": 7
+      },
+      "acquisition": {
+        "monsters": [],
+        "npcs": [],
+        "quests": []
+      },
+      "custom": true
+    },
+    {
+      "id": "ht_red_hunter_gloves",
+      "kind": "equipment",
+      "name": "紅心手套",
+      "sourceName": "經典楓之谷 v83（圖鑑快照沒有）",
+      "type": "GLOVES",
+      "level": 110,
+      "jobs": [
+        "BOWMAN"
+      ],
+      "requirements": {
+        "str": 0,
+        "dex": 315,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "str": 4,
+        "dex": 6,
+        "mp": 30,
+        "def": 44,
+        "upgradeSlots": 5
+      },
+      "acquisition": {
+        "monsters": [],
+        "npcs": [],
+        "quests": []
+      },
+      "custom": true
+    },
+    {
+      "id": "ht_red_hunter_shoes",
+      "kind": "equipment",
+      "name": "紅色獵人鞋",
+      "sourceName": "經典楓之谷 v83（圖鑑快照沒有）",
+      "type": "SHOES",
+      "level": 110,
+      "jobs": [
+        "BOWMAN"
+      ],
+      "requirements": {
+        "str": 0,
+        "dex": 340,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "str": 2,
+        "dex": 6,
+        "def": 64,
+        "avoidability": 1,
+        "upgradeSlots": 5
+      },
+      "acquisition": {
+        "monsters": [],
+        "npcs": [],
+        "quests": []
+      },
+      "custom": true
+    },
+    {
+      "id": "ht_black_garina_shoes",
+      "kind": "equipment",
+      "name": "黑色格麗納靴",
+      "sourceName": "經典楓之谷 v83（圖鑑快照沒有）",
+      "type": "SHOES",
+      "level": 110,
+      "jobs": [
+        "THIEF"
+      ],
+      "requirements": {
+        "str": 0,
+        "dex": 150,
+        "int": 0,
+        "luk": 280
+      },
+      "stats": {
+        "dex": 3,
+        "luk": 4,
+        "def": 64,
+        "avoidability": 1,
+        "upgradeSlots": 5
+      },
+      "acquisition": {
+        "monsters": [],
+        "npcs": [],
+        "quests": []
+      },
+      "custom": true
+    },
+    {
+      "id": "ht_dragon_mace",
+      "kind": "equipment",
+      "name": "龍頭錘",
+      "sourceName": "經典楓之谷 v83（圖鑑快照沒有）",
+      "type": "ONE-HANDED BLUNT WEAPON",
+      "level": 110,
+      "jobs": [
+        "WARRIOR"
+      ],
+      "requirements": {
+        "str": 275,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "atk": 103,
+        "attackSpeed": 6,
+        "upgradeSlots": 7
+      },
+      "acquisition": {
+        "monsters": [],
+        "npcs": [],
+        "quests": []
+      },
+      "custom": true
+    },
+    {
+      "id": "ht_dragon_kreda",
+      "kind": "equipment",
+      "name": "烈風短刃",
+      "sourceName": "經典楓之谷 v83（圖鑑快照沒有）",
+      "type": "DAGGER",
+      "level": 110,
+      "jobs": [
+        "THIEF"
+      ],
+      "requirements": {
+        "str": 0,
+        "dex": 150,
+        "int": 0,
+        "luk": 270
+      },
+      "stats": {
+        "atk": 98,
+        "attackSpeed": 4,
+        "upgradeSlots": 7
+      },
+      "acquisition": {
+        "monsters": [],
+        "npcs": [],
+        "quests": []
+      },
+      "custom": true
+    },
+    {
+      "id": "horntail_necklace",
+      "kind": "equipment",
+      "name": "闇黑龍王項鍊",
+      "sourceName": "闇黑龍王（阿泰爾；掉落時已用龍之石強化）",
+      "type": "PENDANT",
+      "level": 120,
+      "jobs": [
+        "BEGINNER",
+        "WARRIOR",
+        "MAGICIAN",
+        "BOWMAN",
+        "THIEF",
+        "PIRATE"
+      ],
+      "requirements": {
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "str": 22,
+        "dex": 22,
+        "int": 22,
+        "luk": 22,
+        "def": 108,
+        "mdef": 108,
+        "avoidability": 24,
+        "upgradeSlots": 2
+      },
+      "acquisition": {
+        "monsters": [],
+        "npcs": [],
+        "quests": []
+      },
+      "custom": true,
+      "untradeable": true
+    },
+    {
+      "id": "horntail_wings",
+      "kind": "equipment",
+      "name": "闇黑龍王的翅膀",
+      "sourceName": "闇黑龍王（阿泰爾原創，神木村英雄寶箱）",
+      "type": "CAPE",
+      "level": 120,
+      "jobs": [
+        "BEGINNER",
+        "WARRIOR",
+        "MAGICIAN",
+        "BOWMAN",
+        "THIEF",
+        "PIRATE"
+      ],
+      "requirements": {
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "str": 6,
+        "dex": 6,
+        "int": 6,
+        "luk": 6,
+        "def": 78,
+        "mdef": 85,
+        "upgradeSlots": 5
+      },
+      "acquisition": {
+        "monsters": [],
+        "npcs": [],
+        "quests": []
+      },
+      "custom": true,
+      "untradeable": true
+    },
+    {
+      "id": "ring_dragon_slayer",
+      "kind": "equipment",
+      "name": "屠龍者戒指",
+      "sourceName": "文字版自訂",
+      "type": "RING",
+      "level": 100,
+      "jobs": [
+        "BEGINNER",
+        "WARRIOR",
+        "MAGICIAN",
+        "BOWMAN",
+        "THIEF",
+        "PIRATE"
+      ],
+      "requirements": {
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "str": 3,
+        "dex": 3,
+        "int": 3,
+        "luk": 3,
+        "atk": 2,
+        "matk": 2,
+        "upgradeSlots": 0
+      },
+      "acquisition": {
+        "monsters": [],
+        "npcs": [],
+        "quests": []
+      },
+      "custom": true,
+      "effect": "對野王傷害 +10%"
+    },
+    {
+      "id": "ring_sage",
+      "kind": "equipment",
+      "name": "智者戒指",
+      "sourceName": "文字版自訂",
+      "type": "RING",
+      "level": 100,
+      "jobs": [
+        "BEGINNER",
+        "WARRIOR",
+        "MAGICIAN",
+        "BOWMAN",
+        "THIEF",
+        "PIRATE"
+      ],
+      "requirements": {
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "str": 3,
+        "dex": 3,
+        "int": 3,
+        "luk": 3,
+        "hp": 100,
+        "mp": 100,
+        "upgradeSlots": 0
+      },
+      "acquisition": {
+        "monsters": [],
+        "npcs": [],
+        "quests": []
+      },
+      "custom": true,
+      "effect": "經驗 +10%"
+    },
+    {
+      "id": "ring_lucky_star",
+      "kind": "equipment",
+      "name": "幸運之星戒指",
+      "sourceName": "文字版自訂",
+      "type": "RING",
+      "level": 100,
+      "jobs": [
+        "BEGINNER",
+        "WARRIOR",
+        "MAGICIAN",
+        "BOWMAN",
+        "THIEF",
+        "PIRATE"
+      ],
+      "requirements": {
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "str": 2,
+        "dex": 2,
+        "int": 2,
+        "luk": 6,
+        "upgradeSlots": 0
+      },
+      "acquisition": {
+        "monsters": [],
+        "npcs": [],
+        "quests": []
+      },
+      "custom": true,
+      "effect": "掉寶率 +10%"
+    },
+    {
+      "id": "ring_berserker",
+      "kind": "equipment",
+      "name": "狂戰戒指",
+      "sourceName": "文字版自訂",
+      "type": "RING",
+      "level": 100,
+      "jobs": [
+        "BEGINNER",
+        "WARRIOR",
+        "MAGICIAN",
+        "BOWMAN",
+        "THIEF",
+        "PIRATE"
+      ],
+      "requirements": {
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "str": 4,
+        "dex": 4,
+        "luk": 4,
+        "atk": 3,
+        "upgradeSlots": 0
+      },
+      "acquisition": {
+        "monsters": [],
+        "npcs": [],
+        "quests": []
+      },
+      "custom": true,
+      "effect": "爆擊傷害 +10%"
+    },
+    {
+      "id": "ring_phoenix",
+      "kind": "equipment",
+      "name": "不死鳥戒指",
+      "sourceName": "文字版自訂",
+      "type": "RING",
+      "level": 100,
+      "jobs": [
+        "BEGINNER",
+        "WARRIOR",
+        "MAGICIAN",
+        "BOWMAN",
+        "THIEF",
+        "PIRATE"
+      ],
+      "requirements": {
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "str": 3,
+        "dex": 3,
+        "int": 3,
+        "luk": 3,
+        "hp": 300,
+        "def": 30,
+        "upgradeSlots": 0
+      },
+      "acquisition": {
+        "monsters": [],
+        "npcs": [],
+        "quests": []
+      },
+      "custom": true,
+      "effect": "突襲陣亡時原地復活 1 次、陣亡不扣經驗"
+    },
+    {
+      "id": "papulatus_mark",
+      "kind": "equipment",
+      "name": "拉圖斯記號",
+      "sourceName": "困難拉圖斯（阿泰爾，異界箱）",
+      "type": "EYE ACCESSORY",
+      "level": 130,
+      "jobs": [
+        "BEGINNER",
+        "WARRIOR",
+        "MAGICIAN",
+        "BOWMAN",
+        "THIEF",
+        "PIRATE"
+      ],
+      "requirements": {
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "str": 3,
+        "dex": 3,
+        "int": 3,
+        "luk": 3,
+        "hp": 200,
+        "mp": 200,
+        "mdef": 20,
+        "accuracy": 3,
+        "avoidability": 3,
+        "upgradeSlots": 3
+      },
+      "acquisition": {
+        "monsters": [],
+        "npcs": [],
+        "quests": []
+      },
+      "custom": true,
+      "untradeable": true
+    },
+    {
+      "id": "dimension_earrings",
+      "kind": "equipment",
+      "name": "次元耳環",
+      "sourceName": "困難拉圖斯（阿泰爾，異界箱）",
+      "type": "EARRINGS",
+      "level": 120,
+      "jobs": [
+        "BEGINNER",
+        "WARRIOR",
+        "MAGICIAN",
+        "BOWMAN",
+        "THIEF",
+        "PIRATE"
+      ],
+      "requirements": {
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "str": 2,
+        "dex": 2,
+        "int": 2,
+        "luk": 2,
+        "hp": 150,
+        "mp": 150,
+        "mdef": 45,
+        "upgradeSlots": 5
+      },
+      "acquisition": {
+        "monsters": [],
+        "npcs": [],
+        "quests": []
+      },
+      "custom": true,
+      "untradeable": true
+    }
+  ],
+  "ringBox": [
+    {
+      "id": "eq_30c3caff3868",
+      "chance": 0.23
+    },
+    {
+      "id": "eq_ec857e6ed4c8",
+      "chance": 0.17
+    },
+    {
+      "id": "eq_150fb940caca",
+      "chance": 0.11
+    },
+    {
+      "id": "eq_9c8a4d47bab7",
+      "chance": 0.14
+    },
+    {
+      "id": "ring_sage",
+      "chance": 0.08
+    },
+    {
+      "id": "ring_lucky_star",
+      "chance": 0.08
+    },
+    {
+      "id": "ring_berserker",
+      "chance": 0.08
+    },
+    {
+      "id": "ring_dragon_slayer",
+      "chance": 0.06
+    },
+    {
+      "id": "ring_phoenix",
+      "chance": 0.05
+    }
+  ]
 }
