@@ -208,7 +208,7 @@ function raidParts(boss){const num=v=>v.toLocaleString('en-US'),pct=v=>`${Math.r
   const phases=(boss.phases||[]).map((ph,i)=>`${esc(ph.name)}（本體 ${i?`${pct(ph.from)} 以下`:'滿血起'}）${phaseFx(ph)}`).join('；');
   // 闇黑龍王（2026-11-07 起）：部位分三階段，沒有另外的本體血條。
   if(boss.stages){const stage=s=>boss.parts.filter(p=>(p.stage||1)===s).map(p=>`${esc(p.name)} ${num(p.hp)}${p.effectText?`：<strong>${esc(p.effectText)}</strong>`:''}`).join('<br>');
-    return `<p><strong>分 ${Object.keys(boss.stages).length} 階段打，${boss.variants?'全場':`${boss.parts.length} 個${esc(boss.partWord||'部位')}`}合計 ${num(armHp)}。</strong>${boss.variants?`最後一階段每場隨機是 ${Object.values(boss.variants).map(esc).join('或')}其中一隻（只打其中一隻）。`:''}一階段的部位全倒，下一場才打下一階段；最後一階段全倒就打倒了。部位活著時，王房裡的每個人每場都會吃到它的效果，打掉就消失；「必中」每場一定挨一下、扣最大 HP 的一定比例。</p>`+
+    return `<p><strong>分 ${Object.keys(boss.stages).length} 階段打，${boss.variants?'全場':`${boss.parts.length} 個${esc(boss.partWord||'部位')}`}合計 ${num(armHp)}。</strong>${boss.variants?`最後一階段每場隨機是${boss.parts.filter(p=>p.variant).map(p=>`${esc(p.name)}（${esc(boss.variants[p.variant])}）`).join('或')}，只打其中一隻。`:''}一階段的部位全倒，下一場才打下一階段；最後一階段全倒就打倒了。部位活著時，王房裡的每個人每場都會吃到它的效果，打掉就消失；「必中」每場一定挨一下、扣最大 HP 的一定比例。</p>`+
       Object.keys(boss.stages).map(s=>`<p><strong>${esc(boss.stages[s])}</strong><br>${stage(Number(s))}</p>`).join('')+
       (boss.parts.length>Object.keys(boss.stages).length&&!boss.variants?`<p>本體階段群攻一次可以打好幾個部位（最多 6 個），自動照這個順序打：${order.slice(2).join('→')}（攻略說尾巴要先破，有效果的部位優先）。經驗打倒時照隊內傷害比例分，部位倒下不另外給經驗。</p>`:`<p>經驗打倒時照隊內傷害比例分。</p>`);}
   return `<p><strong>先打八隻手臂，全倒本體才能打。</strong>手臂合計 ${num(armHp)}、本體 ${num(boss.hp)}。群攻一次可以打好幾隻手臂（最多 6 隻），自動照壞手優先打：${order.join('→')}。壞手活著時，在王房的每個人每場都會吃到效果，打掉就消失：<br>${arms}</p>`+
