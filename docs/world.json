@@ -70119,5 +70119,71 @@
       "id": "ring_phoenix",
       "chance": 0.05
     }
+  ],
+  "customScrolls": [
+    {
+      "id": "ring_scroll_str",
+      "kind": "scrolls",
+      "name": "戒指力量卷軸60%",
+      "sourceName": "阿泰爾突襲王（圖鑑沒有，能力文字版暫定）",
+      "type": "RING",
+      "stats": {
+        "str": 2
+      },
+      "acquisition": {
+        "monsters": [],
+        "npcs": [],
+        "quests": []
+      },
+      "custom": true
+    },
+    {
+      "id": "ring_scroll_dex",
+      "kind": "scrolls",
+      "name": "戒指敏捷卷軸60%",
+      "sourceName": "阿泰爾突襲王（圖鑑沒有，能力文字版暫定）",
+      "type": "RING",
+      "stats": {
+        "dex": 2
+      },
+      "acquisition": {
+        "monsters": [],
+        "npcs": [],
+        "quests": []
+      },
+      "custom": true
+    },
+    {
+      "id": "ring_scroll_int",
+      "kind": "scrolls",
+      "name": "戒指智力卷軸60%",
+      "sourceName": "阿泰爾突襲王（圖鑑沒有，能力文字版暫定）",
+      "type": "RING",
+      "stats": {
+        "int": 2
+      },
+      "acquisition": {
+        "monsters": [],
+        "npcs": [],
+        "quests": []
+      },
+      "custom": true
+    },
+    {
+      "id": "ring_scroll_luk",
+      "kind": "scrolls",
+      "name": "戒指幸運卷軸60%",
+      "sourceName": "阿泰爾突襲王（圖鑑沒有，能力文字版暫定）",
+      "type": "RING",
+      "stats": {
+        "luk": 2
+      },
+      "acquisition": {
+        "monsters": [],
+        "npcs": [],
+        "quests": []
+      },
+      "custom": true
+    }
   ]
 }
