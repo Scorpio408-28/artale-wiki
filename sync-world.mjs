@@ -17,7 +17,8 @@ const monsters = Object.fromEntries(Object.entries(source.monsters).map(([id, mo
   [id, { ...monster, drops: dropPools[id] || [] }]));
 const usedItemIds = new Set(Object.values(monsters).flatMap(monster => [monster.drop, ...monster.drops.map(drop => drop.id)]));
 // 野王（含殘暴炎魔）掉的裝備、卷軸也要有名稱。
-for (const boss of Object.values(source.fieldBosses)) for (const id of [...(boss.drops || []).map(drop => drop.id), ...(boss.weaponPool || [])]) usedItemIds.add(id);
+for (const boss of Object.values(source.fieldBosses)) for (const id of [...(boss.drops || []).map(drop => drop.id), ...(boss.weaponPool || []),
+  ...(boss.gearBoxes || []).flatMap(box => box.pool.map(entry => entry.id))]) usedItemIds.add(id);
 const skillBooks = await load('src/skillbooks.js').catch(() => null);
 const aliases = source.materialAliases || {};
 const itemIds = new Set([...usedItemIds, ...Object.keys(source.items).filter(id => source.items[id].slot === 'material' && !aliases[id])]);
