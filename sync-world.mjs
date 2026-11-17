@@ -43,6 +43,11 @@ const customEquipment = Object.entries(source.items)
     acquisition: { monsters: [], npcs: [], quests: [] }, custom: true,
     ...(item.effects && statsModule?.effectText ? { effect: statsModule.effectText(item.effects) } : {}),
     ...(market?.tradeable && !market.tradeable(id) ? { untradeable: true } : {}) }));
+// 遊戲自己加的卷軸（突襲王掉的戒指卷軸，社群圖鑑沒有）：資料站卷軸頁併進清單。
+const customScrolls = Object.entries(source.items)
+  .filter(([, item]) => item.slot === 'scroll' && item.raidOnly)
+  .map(([id, item]) => ({ id, kind: 'scrolls', name: item.name, sourceName: item.source || '文字版自訂', type: item.catalogType,
+    stats: item.scrollStats || {}, acquisition: { monsters: [], npcs: [], quests: [] }, custom: true }));
 const previousSkills = new Map(existing.skills.map(skill => [skill.id, skill]));
 const skillCatalog = Object.entries(skills).map(([id, skill]) => {
   const first = skillDetails(id, 1);
@@ -84,6 +89,7 @@ const world = {
   maps, monsters,
   fieldBosses: source.fieldBosses,
   customEquipment,
+  customScrolls,
   ...(source.RING_BOX_ODDS ? { ringBox: source.RING_BOX_ODDS } : {}),
   ...(skillBooks ? { skillBooks: { zakum: skillBooks.ZAKUM_BOOKS, custom: skillBooks.CUSTOM_UNLOCKS, success: skillBooks.BOOK_SUCCESS, needLevel: skillBooks.BOOK_NEED_LEVEL,
     ...(skillBooks.BOOK_SOURCES ? { sources: skillBooks.BOOK_SOURCES, mobRate: skillBooks.BOOK_MOB_RATE, bossRate: skillBooks.BOOK_BOSS_RATE } : {}) } } : {}),

@@ -91,11 +91,11 @@ function showDetail(item){
   panel.scrollIntoView({behavior:'smooth',block:'start'});
 }
 function itemCatalog(catalog,kind){
-  const custom=kind==='equipment'?(gameWorld?.customEquipment||[]):[],list=kind==='equipment'?[...catalog.equipment,...custom]:catalog.scrolls;
+  const custom=kind==='equipment'?(gameWorld?.customEquipment||[]):(gameWorld?.customScrolls||[]),list=kind==='equipment'?[...catalog.equipment,...custom]:[...catalog.scrolls,...custom];
   const title=kind==='equipment'?'裝備圖鑑':'卷軸圖鑑';
   const source=kind==='equipment'?'https://www.artalemaplestory.com/zh/equipment':'https://www.artalemaplestory.com/zh/scrolls';
   const types=[...new Set(list.map(x=>x.type))].sort((a,b)=>typeName(a).localeCompare(typeName(b),'zh-Hant'));
-  root.innerHTML=head('ITEM DATABASE',title,`收錄 ${number(list.length-custom.length)} 筆玩家社群資料${custom.length?`，另加文字版自己加的 ${custom.length} 件（王的專屬飾品、自訂戒指等）`:''}，包含屬性、取得來源與有列出的 NPC 售價。可點名稱查看詳情。`)+
+  root.innerHTML=head('ITEM DATABASE',title,`收錄 ${number(list.length-custom.length)} 筆玩家社群資料${custom.length?`，另加文字版自己加的 ${custom.length} ${kind==='equipment'?'件（王的專屬飾品、自訂戒指等）':'張（突襲王掉的戒指卷軸）'}`:''}，包含屬性、取得來源與有列出的 NPC 售價。可點名稱查看詳情。`)+
     `<div class="notice">這是資料快照，不保證全部已在台服開放；文字版商店只賣原作 NPC 有賣的裝備與卷軸，其餘打怪取得；部分特殊屬性仍未套入戰鬥公式。<a href="changelog.html">查看資料說明</a></div>
     <div class="tools"><label class="field">搜尋名稱<input id="query" type="search" placeholder="輸入物品名稱或英文名稱" autocomplete="off"></label><label class="field">部位<select id="type"><option value="">全部部位</option>${types.map(x=>`<option value="${esc(x)}">${esc(typeName(x))}</option>`).join('')}</select></label>
     ${kind==='equipment'?'<label class="field">最高需求等級<select id="level"><option value="">全部等級</option><option value="10">Lv.10 以下</option><option value="30">Lv.30 以下</option><option value="70">Lv.70 以下</option><option value="120">Lv.120 以下</option></select></label>':'<label class="field">成功率<select id="rate"><option value="">全部成功率</option><option>10%</option><option>30%</option><option>60%</option><option>70%</option><option>100%</option></select></label>'}</div>
