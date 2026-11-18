@@ -61471,8 +61471,7 @@
       "maxLevel": 20,
       "firstMp": 0,
       "maxMp": 0,
-      "inert": true,
-      "description": "原作：屬性抗性 +40%；文字版怪物攻擊不分屬性（文字版沒有對應效果，學了不會變強）"
+      "description": "受到的魔法攻擊傷害 -20%（原作：屬性抗性 +40%）"
     },
     {
       "id": "spear_crusher",
@@ -61606,8 +61605,7 @@
       "maxLevel": 20,
       "firstMp": 0,
       "maxMp": 0,
-      "inert": true,
-      "description": "原作：屬性抗性 +60%；文字版怪物攻擊不分屬性（文字版沒有對應效果，學了不會變強）"
+      "description": "受到的魔法攻擊傷害 -30%（原作：屬性抗性 +60%）"
     },
     {
       "id": "il_resistance",
@@ -61622,8 +61620,7 @@
       "maxLevel": 20,
       "firstMp": 0,
       "maxMp": 0,
-      "inert": true,
-      "description": "原作：屬性抗性 +60%；文字版怪物攻擊不分屬性（文字版沒有對應效果，學了不會變強）"
+      "description": "受到的魔法攻擊傷害 -30%（原作：屬性抗性 +60%）"
     },
     {
       "id": "element_amplification",
@@ -61813,8 +61810,7 @@
       "maxLevel": 20,
       "firstMp": 0,
       "maxMp": 0,
-      "inert": true,
-      "description": "原作：屬性抗性 +50%；文字版怪物攻擊不分屬性（文字版沒有對應效果，學了不會變強）"
+      "description": "受到的魔法攻擊傷害 -25%（原作：屬性抗性 +50%）"
     },
     {
       "id": "dispel",
@@ -61829,8 +61825,7 @@
       "maxLevel": 20,
       "firstMp": 0,
       "maxMp": 0,
-      "inert": true,
-      "description": "原作：解除怪物增益與隊友異常狀態（文字版沒有對應效果，學了不會變強）"
+      "description": "打王時，王的封印機率、傷害降低、受到傷害增加 -50%；突襲時同隊隊友也有效（原作：解除隊友異常狀態）"
     },
     {
       "id": "mystic_door",
@@ -61848,8 +61843,7 @@
       "prerequisite": {
         "dispel": 3
       },
-      "inert": true,
-      "description": "原作：開傳送門回城（文字版沒有對應效果，學了不會變強）"
+      "description": "搭船船票 -100%（免費）（原作：開傳送門回城）"
     },
     {
       "id": "holy_symbol",
@@ -62166,16 +62160,15 @@
       "name": "影網術",
       "job": "hermit",
       "tier": 3,
-      "kind": "passive",
+      "kind": "debuff",
       "jobs": [
         "hermit"
       ],
       "weapons": [],
       "maxLevel": 20,
-      "firstMp": 0,
-      "maxMp": 0,
-      "inert": true,
-      "description": "原作：讓怪物定身（文字版沒有對應效果，學了不會變強）"
+      "firstMp": 10,
+      "maxMp": 25,
+      "description": "練功時這批怪物被定身，受到的傷害 +10%（野王、突襲王無效；原作：讓怪物定身）"
     },
     {
       "id": "shadow_meso",
@@ -62193,8 +62186,7 @@
       "prerequisite": {
         "meso_up": 5
       },
-      "inert": true,
-      "description": "原作：丟楓幣攻擊，傷害公式查不到（文字版沒有對應效果，學了不會變強）"
+      "description": "打王（野王、突襲王）傷害 +10%，不扣楓幣（原作：丟楓幣攻擊）"
     },
     {
       "id": "avenger",
@@ -62312,35 +62304,38 @@
       "name": "勇者掠奪術",
       "job": "chief_bandit",
       "tier": 3,
-      "kind": "passive",
+      "kind": "debuff",
       "jobs": [
         "chief_bandit"
       ],
       "weapons": [],
       "maxLevel": 20,
-      "firstMp": 0,
-      "maxMp": 0,
+      "firstMp": 10,
+      "maxMp": 25,
       "prerequisite": {
         "meso_explosion": 3
       },
-      "inert": true,
-      "description": "原作：在怪物身上累積楓幣、配合楓幣炸彈引爆，傷害公式查不到（文字版沒有對應效果，學了不會變強）"
+      "description": "練功時這批怪物受到的傷害 +10%（野王、突襲王無效；不會多掉楓幣；原作：在怪物身上累積楓幣）"
     },
     {
       "id": "meso_explosion",
       "name": "楓幣炸彈",
       "job": "chief_bandit",
       "tier": 3,
-      "kind": "passive",
       "jobs": [
         "chief_bandit"
       ],
-      "weapons": [],
+      "weapons": [
+        "dagger"
+      ],
       "maxLevel": 30,
-      "firstMp": 0,
-      "maxMp": 0,
-      "inert": true,
-      "description": "原作：引爆勇者掠奪術累積的楓幣，傷害公式查不到（文字版沒有對應效果，學了不會變強）"
+      "hits": 1,
+      "firstPercent": 100,
+      "maxPercent": 200,
+      "targets": 6,
+      "firstMp": 10,
+      "maxMp": 30,
+      "description": "一次打 6 隻，無視物防，不扣楓幣（原作傷害公式查不到，文字版自訂）"
     },
     {
       "id": "stun_mastery",
@@ -63062,8 +63057,7 @@
         "20": "海怒斯、雙刀龍戰士",
         "30": "海怒斯、多多"
       },
-      "inert": true,
-      "description": "原作：機率把怪物的魔法攻擊反彈回去；文字版尚未實作魔法反射（文字版沒有對應效果，學了不會變強）"
+      "description": "打王（野王、突襲王）傷害 +10%（原作：把怪物的魔法攻擊反彈回去）"
     },
     {
       "id": "infinity",
@@ -63347,8 +63341,7 @@
         "20": "無（最高 10）",
         "30": "無"
       },
-      "inert": true,
-      "description": "原作：復活隊友（文字版沒有對應效果，學了不會變強）"
+      "description": "突襲時同隊隊友陣亡，原地復活、HP 回到一半；每場突襲最多 3 次，不能救自己（原作：復活隊友）"
     },
     {
       "id": "angel_ray",
@@ -63548,21 +63541,20 @@
       "name": "牽制射擊",
       "job": "bowmaster",
       "tier": 4,
-      "kind": "passive",
+      "kind": "debuff",
       "jobs": [
         "bowmaster"
       ],
       "weapons": [],
       "maxLevel": 30,
-      "firstMp": 0,
-      "maxMp": 0,
+      "firstMp": 10,
+      "maxMp": 30,
       "masterLevel": 10,
       "books": {
         "20": "化石龍長老",
         "30": "格瑞芬多、多多"
       },
-      "inert": true,
-      "description": "原作：讓怪物變慢（文字版沒有對應效果，學了不會變強）"
+      "description": "練功時怪物變慢，受到的傷害 -20%（野王、突襲王無效；原作：讓怪物變慢）"
     },
     {
       "id": "concentrate",
@@ -63639,21 +63631,20 @@
       "name": "黑暗狙擊",
       "job": "marksman",
       "tier": 4,
-      "kind": "passive",
+      "kind": "debuff",
       "jobs": [
         "marksman"
       ],
       "weapons": [],
       "maxLevel": 30,
-      "firstMp": 0,
-      "maxMp": 0,
+      "firstMp": 10,
+      "maxMp": 30,
       "masterLevel": 10,
       "books": {
         "20": "化石龍長老",
         "30": "格瑞芬多"
       },
-      "inert": true,
-      "description": "原作：機率降低怪物命中（文字版沒有對應效果，學了不會變強）"
+      "description": "怪物命中降低，受到的傷害 -15%（野王、突襲王也有效；原作：降低怪物命中）"
     },
     {
       "id": "snipe",
@@ -64206,8 +64197,7 @@
         "20": "殘暴炎魔",
         "30": "闇黑龍王"
       },
-      "inert": true,
-      "description": "原作：重置隊伍技能冷卻（文字版沒有對應效果，學了不會變強）"
+      "description": "自己所有技能的冷卻時間 -10%（原作：重置隊伍技能冷卻）"
     },
     {
       "id": "elemental_boost",
@@ -64453,7 +64443,7 @@
       "description": "攻擊速度再 +2 段（和快速系列疊加），持續 300 秒（Lv.1 經典）"
     }
   ],
-  "version": "1.3.0",
+  "version": "1.3.1",
   "gearPrices": {
     "eq_6d28d4dbe008": [12500, 6250, 0],
     "eq_42d8531366be": [24500, 12250, 0],
